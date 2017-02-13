@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="WebShopDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Customer">
+    <Key>
+      <PropertyRef Name="IdCustomer" />
+    </Key>
+    <Property Name="IdCustomer" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="LName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="FName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Address" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="LandPhone" Type="varchar" MaxLength="20" />
+    <Property Name="CellPhone" Type="varchar" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="Item">
+    <Key>
+      <PropertyRef Name="IdItem" />
+    </Key>
+    <Property Name="IdItem" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Code" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="Description" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="IdType" Type="int" Nullable="false" />
+    <Property Name="Vs_date" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Order">
+    <Key>
+      <PropertyRef Name="IdOrder" />
+    </Key>
+    <Property Name="IdOrder" Type="int" Nullable="false" />
+    <Property Name="IdCustomer" Type="int" Nullable="false" />
+    <Property Name="OrderDate" Type="datetime" Nullable="false" />
+    <Property Name="DeliveryDate" Type="datetime" Nullable="false" />
+    <Property Name="FromTime" Type="varchar" MaxLength="5" Nullable="false" />
+    <Property Name="ToTime" Type="varchar" MaxLength="5" Nullable="false" />
+    <Property Name="Comments" Type="nvarchar" MaxLength="200" />
+  </EntityType>
+  <EntityType Name="TrOrder">
+    <Key>
+      <PropertyRef Name="IdTrOrder" />
+    </Key>
+    <Property Name="IdTrOrder" Type="int" Nullable="false" />
+    <Property Name="IdOrder" Type="int" Nullable="false" />
+    <Property Name="IdItem" Type="int" Nullable="false" />
+    <Property Name="ItemKg" Type="decimal" Precision="18" Scale="2" />
+  </EntityType>
+  <EntityType Name="Type">
+    <Key>
+      <PropertyRef Name="IdType" />
+    </Key>
+    <Property Name="IdType" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Description" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_Item_IdType">
+    <End Role="Type" Type="Self.Type" Multiplicity="1" />
+    <End Role="Item" Type="Self.Item" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Type">
+        <PropertyRef Name="IdType" />
+      </Principal>
+      <Dependent Role="Item">
+        <PropertyRef Name="IdType" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Order_IdCustomer">
+    <End Role="Customer" Type="Self.Customer" Multiplicity="1" />
+    <End Role="Order" Type="Self.Order" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Customer">
+        <PropertyRef Name="IdCustomer" />
+      </Principal>
+      <Dependent Role="Order">
+        <PropertyRef Name="IdCustomer" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TrOrder_IdItem">
+    <End Role="Item" Type="Self.Item" Multiplicity="1" />
+    <End Role="TrOrder" Type="Self.TrOrder" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Item">
+        <PropertyRef Name="IdItem" />
+      </Principal>
+      <Dependent Role="TrOrder">
+        <PropertyRef Name="IdItem" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TrOrder_IdOrder">
+    <End Role="Order" Type="Self.Order" Multiplicity="1" />
+    <End Role="TrOrder" Type="Self.TrOrder" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Order">
+        <PropertyRef Name="IdOrder" />
+      </Principal>
+      <Dependent Role="TrOrder">
+        <PropertyRef Name="IdOrder" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="WebShopDBModelStoreContainer">
+    <EntitySet Name="Customer" EntityType="Self.Customer" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Item" EntityType="Self.Item" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Order" EntityType="Self.Order" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TrOrder" EntityType="Self.TrOrder" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Type" EntityType="Self.Type" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_Item_IdType" Association="Self.FK_Item_IdType">
+      <End Role="Type" EntitySet="Type" />
+      <End Role="Item" EntitySet="Item" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Order_IdCustomer" Association="Self.FK_Order_IdCustomer">
+      <End Role="Customer" EntitySet="Customer" />
+      <End Role="Order" EntitySet="Order" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TrOrder_IdItem" Association="Self.FK_TrOrder_IdItem">
+      <End Role="Item" EntitySet="Item" />
+      <End Role="TrOrder" EntitySet="TrOrder" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TrOrder_IdOrder" Association="Self.FK_TrOrder_IdOrder">
+      <End Role="Order" EntitySet="Order" />
+      <End Role="TrOrder" EntitySet="TrOrder" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

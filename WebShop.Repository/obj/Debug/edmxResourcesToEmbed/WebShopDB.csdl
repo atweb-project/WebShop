@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="WebShopDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Customer">
+    <Key>
+      <PropertyRef Name="IdCustomer" />
+    </Key>
+    <Property Name="IdCustomer" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="LName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="FName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Address" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="LandPhone" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="CellPhone" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Orders" Relationship="Self.FK_Order_IdCustomer" FromRole="Customer" ToRole="Order" />
+  </EntityType>
+  <EntityType Name="Item">
+    <Key>
+      <PropertyRef Name="IdItem" />
+    </Key>
+    <Property Name="IdItem" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Code" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Description" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="IdType" Type="Int32" Nullable="false" />
+    <Property Name="Vs_date" Type="DateTime" Nullable="false" Precision="3" />
+    <NavigationProperty Name="Type" Relationship="Self.FK_Item_IdType" FromRole="Item" ToRole="Type" />
+    <NavigationProperty Name="TrOrders" Relationship="Self.FK_TrOrder_IdItem" FromRole="Item" ToRole="TrOrder" />
+  </EntityType>
+  <EntityType Name="Order">
+    <Key>
+      <PropertyRef Name="IdOrder" />
+    </Key>
+    <Property Name="IdOrder" Type="Int32" Nullable="false" />
+    <Property Name="IdCustomer" Type="Int32" Nullable="false" />
+    <Property Name="OrderDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="DeliveryDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="FromTime" Type="String" MaxLength="5" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ToTime" Type="String" MaxLength="5" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Comments" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Customer" Relationship="Self.FK_Order_IdCustomer" FromRole="Order" ToRole="Customer" />
+    <NavigationProperty Name="TrOrders" Relationship="Self.FK_TrOrder_IdOrder" FromRole="Order" ToRole="TrOrder" />
+  </EntityType>
+  <EntityType Name="TrOrder">
+    <Key>
+      <PropertyRef Name="IdTrOrder" />
+    </Key>
+    <Property Name="IdTrOrder" Type="Int32" Nullable="false" />
+    <Property Name="IdOrder" Type="Int32" Nullable="false" />
+    <Property Name="IdItem" Type="Int32" Nullable="false" />
+    <Property Name="ItemKg" Type="Decimal" Precision="18" Scale="2" />
+    <NavigationProperty Name="Item" Relationship="Self.FK_TrOrder_IdItem" FromRole="TrOrder" ToRole="Item" />
+    <NavigationProperty Name="Order" Relationship="Self.FK_TrOrder_IdOrder" FromRole="TrOrder" ToRole="Order" />
+  </EntityType>
+  <EntityType Name="Type">
+    <Key>
+      <PropertyRef Name="IdType" />
+    </Key>
+    <Property Name="IdType" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Description" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Items" Relationship="Self.FK_Item_IdType" FromRole="Type" ToRole="Item" />
+  </EntityType>
+  <Association Name="FK_Order_IdCustomer">
+    <End Role="Customer" Type="Self.Customer" Multiplicity="1" />
+    <End Role="Order" Type="Self.Order" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Customer">
+        <PropertyRef Name="IdCustomer" />
+      </Principal>
+      <Dependent Role="Order">
+        <PropertyRef Name="IdCustomer" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Item_IdType">
+    <End Role="Type" Type="Self.Type" Multiplicity="1" />
+    <End Role="Item" Type="Self.Item" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Type">
+        <PropertyRef Name="IdType" />
+      </Principal>
+      <Dependent Role="Item">
+        <PropertyRef Name="IdType" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TrOrder_IdItem">
+    <End Role="Item" Type="Self.Item" Multiplicity="1" />
+    <End Role="TrOrder" Type="Self.TrOrder" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Item">
+        <PropertyRef Name="IdItem" />
+      </Principal>
+      <Dependent Role="TrOrder">
+        <PropertyRef Name="IdItem" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TrOrder_IdOrder">
+    <End Role="Order" Type="Self.Order" Multiplicity="1" />
+    <End Role="TrOrder" Type="Self.TrOrder" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Order">
+        <PropertyRef Name="IdOrder" />
+      </Principal>
+      <Dependent Role="TrOrder">
+        <PropertyRef Name="IdOrder" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="WebShopDBEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Customers" EntityType="Self.Customer" />
+    <EntitySet Name="Items" EntityType="Self.Item" />
+    <EntitySet Name="Orders" EntityType="Self.Order" />
+    <EntitySet Name="TrOrders" EntityType="Self.TrOrder" />
+    <EntitySet Name="Types" EntityType="Self.Type" />
+    <AssociationSet Name="FK_Order_IdCustomer" Association="Self.FK_Order_IdCustomer">
+      <End Role="Customer" EntitySet="Customers" />
+      <End Role="Order" EntitySet="Orders" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Item_IdType" Association="Self.FK_Item_IdType">
+      <End Role="Type" EntitySet="Types" />
+      <End Role="Item" EntitySet="Items" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TrOrder_IdItem" Association="Self.FK_TrOrder_IdItem">
+      <End Role="Item" EntitySet="Items" />
+      <End Role="TrOrder" EntitySet="TrOrders" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TrOrder_IdOrder" Association="Self.FK_TrOrder_IdOrder">
+      <End Role="Order" EntitySet="Orders" />
+      <End Role="TrOrder" EntitySet="TrOrders" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

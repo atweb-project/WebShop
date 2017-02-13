@@ -1,0 +1,12 @@
+C:\Users\Spiros\Documents\Visual Studio 2015\Projects\WebShop\WebShop.Repository\bin\Debug\WebShop.Repository.dll.config
+C:\Users\Spiros\Documents\Visual Studio 2015\Projects\WebShop\WebShop.Repository\bin\Debug\WebShop.Repository.dll
+C:\Users\Spiros\Documents\Visual Studio 2015\Projects\WebShop\WebShop.Repository\bin\Debug\WebShop.Repository.pdb
+C:\Users\Spiros\Documents\Visual Studio 2015\Projects\WebShop\WebShop.Repository\bin\Debug\AutoMapper.dll
+C:\Users\Spiros\Documents\Visual Studio 2015\Projects\WebShop\WebShop.Repository\bin\Debug\EntityFramework.dll
+C:\Users\Spiros\Documents\Visual Studio 2015\Projects\WebShop\WebShop.Repository\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Spiros\Documents\Visual Studio 2015\Projects\WebShop\WebShop.Repository\bin\Debug\AutoMapper.xml
+C:\Users\Spiros\Documents\Visual Studio 2015\Projects\WebShop\WebShop.Repository\bin\Debug\EntityFramework.xml
+C:\Users\Spiros\Documents\Visual Studio 2015\Projects\WebShop\WebShop.Repository\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Spiros\Documents\Visual Studio 2015\Projects\WebShop\WebShop.Repository\obj\Debug\WebShop.Repository.csprojResolveAssemblyReference.cache
+C:\Users\Spiros\Documents\Visual Studio 2015\Projects\WebShop\WebShop.Repository\obj\Debug\WebShop.Repository.dll
+C:\Users\Spiros\Documents\Visual Studio 2015\Projects\WebShop\WebShop.Repository\obj\Debug\WebShop.Repository.pdb

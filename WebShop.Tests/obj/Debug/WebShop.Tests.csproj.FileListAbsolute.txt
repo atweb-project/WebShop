@@ -1,0 +1,163 @@
+C:\Users\Spiros\Documents\Visual Studio 2015\Projects\WebShop\WebShop.Tests\bin\Debug\ApplicationInsights.config
+C:\Users\Spiros\Documents\Visual Studio 2015\Projects\WebShop\WebShop.Tests\bin\Debug\roslyn\csc.exe
+C:\Users\Spiros\Documents\Visual Studio 2015\Projects\WebShop\WebShop.Tests\bin\Debug\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Spiros\Documents\Visual Studio 2015\Projects\WebShop\WebShop.Tests\bin\Debug\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Spiros\Documents\Visual Studio 2015\Projects\WebShop\WebShop.Tests\bin\Debug\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Spiros\Documents\Visual Studio 2015\Projects\WebShop\WebShop.Tests\bin\Debug\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Spiros\Documents\Visual Studio 2015\Projects\WebShop\WebShop.Tests\bin\Debug\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Spiros\Documents\Visual Studio 2015\Projects\WebShop\WebShop.Tests\bin\Debug\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Spiros\Documents\Visual Studio 2015\Projects\WebShop\WebShop.Tests\bin\Debug\roslyn\System.Collections.Immutable.dll
+C:\Users\Spiros\Documents\Visual Studio 2015\Projects\WebShop\WebShop.Tests\bin\Debug\roslyn\System.Reflection.Metadata.dll
+C:\Users\Spiros\Documents\Visual Studio 2015\Projects\WebShop\WebShop.Tests\bin\Debug\roslyn\vbc.exe
+C:\Users\Spiros\Documents\Visual Studio 2015\Projects\WebShop\WebShop.Tests\bin\Debug\roslyn\VBCSCompiler.exe
+C:\Users\Spiros\Documents\Visual Studio 2015\Projects\WebShop\WebShop.Tests\bin\Debug\roslyn\VBCSCompiler.exe.config
+C:\Users\Spiros\Documents\Visual Studio 2015\Projects\WebShop\WebShop.Tests\bin\Debug\WebShop.Tests.dll.config
+C:\Users\Spiros\Documents\Visual Studio 2015\Projects\WebShop\WebShop.Tests\bin\Debug\WebShop.Tests.dll
+C:\Users\Spiros\Documents\Visual Studio 2015\Projects\WebShop\WebShop.Tests\bin\Debug\WebShop.Tests.pdb
+C:\Users\Spiros\Documents\Visual Studio 2015\Projects\WebShop\WebShop.Tests\bin\Debug\AutoMapper.dll
+C:\Users\Spiros\Documents\Visual Studio 2015\Projects\WebShop\WebShop.Tests\bin\Debug\EntityFramework.dll
+C:\Users\Spiros\Documents\Visual Studio 2015\Projects\WebShop\WebShop.Tests\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Spiros\Documents\Visual Studio 2015\Projects\WebShop\WebShop.Tests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\Spiros\Documents\Visual Studio 2015\Projects\WebShop\WebShop.Tests\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Users\Spiros\Documents\Visual Studio 2015\Projects\WebShop\WebShop.Tests\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Spiros\Documents\Visual Studio 2015\Projects\WebShop\WebShop.Tests\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\Spiros\Documents\Visual Studio 2015\Projects\WebShop\WebShop.Tests\bin\Debug\System.Web.Helpers.dll
+C:\Users\Spiros\Documents\Visual Studio 2015\Projects\WebShop\WebShop.Tests\bin\Debug\System.Web.Http.dll
+C:\Users\Spiros\Documents\Visual Studio 2015\Projects\WebShop\WebShop.Tests\bin\Debug\System.Web.Http.WebHost.dll
+C:\Users\Spiros\Documents\Visual Studio 2015\Projects\WebShop\WebShop.Tests\bin\Debug\System.Web.Mvc.dll
+C:\Users\Spiros\Documents\Visual Studio 2015\Projects\WebShop\WebShop.Tests\bin\Debug\System.Web.Razor.dll
+C:\Users\Spiros\Documents\Visual Studio 2015\Projects\WebShop\WebShop.Tests\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Users\Spiros\Documents\Visual Studio 2015\Projects\WebShop\WebShop.Tests\bin\Debug\System.Web.WebPages.dll
+C:\Users\Spiros\Documents\Visual Studio 2015\Projects\WebShop\WebShop.Tests\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Users\Spiros\Documents\Visual Studio 2015\Projects\WebShop\WebShop.Tests\bin\Debug\WebShop.dll
+C:\Users\Spiros\Documents\Visual Studio 2015\Projects\WebShop\WebShop.Tests\bin\Debug\WebActivatorEx.dll
+C:\Users\Spiros\Documents\Visual Studio 2015\Projects\WebShop\WebShop.Tests\bin\Debug\Microsoft.Owin.dll
+C:\Users\Spiros\Documents\Visual Studio 2015\Projects\WebShop\WebShop.Tests\bin\Debug\System.Web.Optimization.dll
+C:\Users\Spiros\Documents\Visual Studio 2015\Projects\WebShop\WebShop.Tests\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Spiros\Documents\Visual Studio 2015\Projects\WebShop\WebShop.Tests\bin\Debug\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Spiros\Documents\Visual Studio 2015\Projects\WebShop\WebShop.Tests\bin\Debug\Microsoft.Owin.Security.dll
+C:\Users\Spiros\Documents\Visual Studio 2015\Projects\WebShop\WebShop.Tests\bin\Debug\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Spiros\Documents\Visual Studio 2015\Projects\WebShop\WebShop.Tests\bin\Debug\Owin.dll
+C:\Users\Spiros\Documents\Visual Studio 2015\Projects\WebShop\WebShop.Tests\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Spiros\Documents\Visual Studio 2015\Projects\WebShop\WebShop.Tests\bin\Debug\System.Web.Http.Owin.dll
+C:\Users\Spiros\Documents\Visual Studio 2015\Projects\WebShop\WebShop.Tests\bin\Debug\Ninject.Web.Common.dll
+C:\Users\Spiros\Documents\Visual Studio 2015\Projects\WebShop\WebShop.Tests\bin\Debug\Ninject.dll
+C:\Users\Spiros\Documents\Visual Studio 2015\Projects\WebShop\WebShop.Tests\bin\Debug\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Spiros\Documents\Visual Studio 2015\Projects\WebShop\WebShop.Tests\bin\Debug\WebShop.Services.dll
+C:\Users\Spiros\Documents\Visual Studio 2015\Projects\WebShop\WebShop.Tests\bin\Debug\WebShop.Repository.dll
+C:\Users\Spiros\Documents\Visual Studio 2015\Projects\WebShop\WebShop.Tests\bin\Debug\WebShop.pdb
+C:\Users\Spiros\Documents\Visual Studio 2015\Projects\WebShop\WebShop.Tests\bin\Debug\AutoMapper.xml
+C:\Users\Spiros\Documents\Visual Studio 2015\Projects\WebShop\WebShop.Tests\bin\Debug\EntityFramework.xml
+C:\Users\Spiros\Documents\Visual Studio 2015\Projects\WebShop\WebShop.Tests\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Spiros\Documents\Visual Studio 2015\Projects\WebShop\WebShop.Tests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.xml
+C:\Users\Spiros\Documents\Visual Studio 2015\Projects\WebShop\WebShop.Tests\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Spiros\Documents\Visual Studio 2015\Projects\WebShop\WebShop.Tests\bin\Debug\System.Net.Http.Formatting.xml
+C:\Users\Spiros\Documents\Visual Studio 2015\Projects\WebShop\WebShop.Tests\bin\Debug\System.Web.Helpers.xml
+C:\Users\Spiros\Documents\Visual Studio 2015\Projects\WebShop\WebShop.Tests\bin\Debug\System.Web.Http.xml
+C:\Users\Spiros\Documents\Visual Studio 2015\Projects\WebShop\WebShop.Tests\bin\Debug\System.Web.Http.WebHost.xml
+C:\Users\Spiros\Documents\Visual Studio 2015\Projects\WebShop\WebShop.Tests\bin\Debug\System.Web.Mvc.xml
+C:\Users\Spiros\Documents\Visual Studio 2015\Projects\WebShop\WebShop.Tests\bin\Debug\System.Web.Razor.xml
+C:\Users\Spiros\Documents\Visual Studio 2015\Projects\WebShop\WebShop.Tests\bin\Debug\System.Web.WebPages.xml
+C:\Users\Spiros\Documents\Visual Studio 2015\Projects\WebShop\WebShop.Tests\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\Users\Spiros\Documents\Visual Studio 2015\Projects\WebShop\WebShop.Tests\bin\Debug\System.Web.WebPages.Razor.xml
+C:\Users\Spiros\Documents\Visual Studio 2015\Projects\WebShop\WebShop.Tests\bin\Debug\Microsoft.Owin.xml
+C:\Users\Spiros\Documents\Visual Studio 2015\Projects\WebShop\WebShop.Tests\bin\Debug\System.Web.Optimization.xml
+C:\Users\Spiros\Documents\Visual Studio 2015\Projects\WebShop\WebShop.Tests\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Spiros\Documents\Visual Studio 2015\Projects\WebShop\WebShop.Tests\bin\Debug\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Spiros\Documents\Visual Studio 2015\Projects\WebShop\WebShop.Tests\bin\Debug\Microsoft.Owin.Security.xml
+C:\Users\Spiros\Documents\Visual Studio 2015\Projects\WebShop\WebShop.Tests\bin\Debug\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Spiros\Documents\Visual Studio 2015\Projects\WebShop\WebShop.Tests\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Spiros\Documents\Visual Studio 2015\Projects\WebShop\WebShop.Tests\bin\Debug\System.Web.Http.Owin.xml
+C:\Users\Spiros\Documents\Visual Studio 2015\Projects\WebShop\WebShop.Tests\bin\Debug\Ninject.Web.Common.xml
+C:\Users\Spiros\Documents\Visual Studio 2015\Projects\WebShop\WebShop.Tests\bin\Debug\Ninject.xml
+C:\Users\Spiros\Documents\Visual Studio 2015\Projects\WebShop\WebShop.Tests\bin\Debug\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Spiros\Documents\Visual Studio 2015\Projects\WebShop\WebShop.Tests\bin\Debug\WebShop.Services.pdb
+C:\Users\Spiros\Documents\Visual Studio 2015\Projects\WebShop\WebShop.Tests\bin\Debug\WebShop.Repository.pdb
+C:\Users\Spiros\Documents\Visual Studio 2015\Projects\WebShop\WebShop.Tests\obj\Debug\WebShop.Tests.csprojResolveAssemblyReference.cache
+C:\Users\Spiros\Documents\Visual Studio 2015\Projects\WebShop\WebShop.Tests\obj\Debug\WebShop.Tests.dll
+C:\Users\Spiros\Documents\Visual Studio 2015\Projects\WebShop\WebShop.Tests\obj\Debug\WebShop.Tests.pdb
+C:\Users\Spiros\documents\visual studio 2015\Projects\WebShop\WebShop.Tests\bin\Debug\WebShop.Model.dll
+C:\Users\Spiros\documents\visual studio 2015\Projects\WebShop\WebShop.Tests\bin\Debug\WebShop.Infrastructure.dll
+C:\Users\Spiros\documents\visual studio 2015\Projects\WebShop\WebShop.Tests\bin\Debug\WebShop.Model.pdb
+C:\Users\Spiros\documents\visual studio 2015\Projects\WebShop\WebShop.Tests\bin\Debug\WebShop.Infrastructure.pdb
+F:\NEw job\WebShop\WebShop.Tests\bin\Debug\ApplicationInsights.config
+F:\NEw job\WebShop\WebShop.Tests\bin\Debug\roslyn\csc.exe
+F:\NEw job\WebShop\WebShop.Tests\bin\Debug\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+F:\NEw job\WebShop\WebShop.Tests\bin\Debug\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+F:\NEw job\WebShop\WebShop.Tests\bin\Debug\roslyn\Microsoft.CodeAnalysis.dll
+F:\NEw job\WebShop\WebShop.Tests\bin\Debug\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+F:\NEw job\WebShop\WebShop.Tests\bin\Debug\roslyn\Microsoft.CSharp.Core.targets
+F:\NEw job\WebShop\WebShop.Tests\bin\Debug\roslyn\Microsoft.VisualBasic.Core.targets
+F:\NEw job\WebShop\WebShop.Tests\bin\Debug\roslyn\System.Collections.Immutable.dll
+F:\NEw job\WebShop\WebShop.Tests\bin\Debug\roslyn\System.Reflection.Metadata.dll
+F:\NEw job\WebShop\WebShop.Tests\bin\Debug\roslyn\vbc.exe
+F:\NEw job\WebShop\WebShop.Tests\bin\Debug\roslyn\VBCSCompiler.exe
+F:\NEw job\WebShop\WebShop.Tests\bin\Debug\roslyn\VBCSCompiler.exe.config
+F:\NEw job\WebShop\WebShop.Tests\bin\Debug\WebShop.Tests.dll.config
+F:\NEw job\WebShop\WebShop.Tests\bin\Debug\WebShop.Tests.dll
+F:\NEw job\WebShop\WebShop.Tests\bin\Debug\WebShop.Tests.pdb
+F:\NEw job\WebShop\WebShop.Tests\bin\Debug\AutoMapper.dll
+F:\NEw job\WebShop\WebShop.Tests\bin\Debug\EntityFramework.dll
+F:\NEw job\WebShop\WebShop.Tests\bin\Debug\EntityFramework.SqlServer.dll
+F:\NEw job\WebShop\WebShop.Tests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+F:\NEw job\WebShop\WebShop.Tests\bin\Debug\Microsoft.Web.Infrastructure.dll
+F:\NEw job\WebShop\WebShop.Tests\bin\Debug\Newtonsoft.Json.dll
+F:\NEw job\WebShop\WebShop.Tests\bin\Debug\System.Net.Http.Formatting.dll
+F:\NEw job\WebShop\WebShop.Tests\bin\Debug\System.Web.Helpers.dll
+F:\NEw job\WebShop\WebShop.Tests\bin\Debug\System.Web.Http.dll
+F:\NEw job\WebShop\WebShop.Tests\bin\Debug\System.Web.Http.WebHost.dll
+F:\NEw job\WebShop\WebShop.Tests\bin\Debug\System.Web.Mvc.dll
+F:\NEw job\WebShop\WebShop.Tests\bin\Debug\System.Web.Razor.dll
+F:\NEw job\WebShop\WebShop.Tests\bin\Debug\System.Web.WebPages.Deployment.dll
+F:\NEw job\WebShop\WebShop.Tests\bin\Debug\System.Web.WebPages.dll
+F:\NEw job\WebShop\WebShop.Tests\bin\Debug\System.Web.WebPages.Razor.dll
+F:\NEw job\WebShop\WebShop.Tests\bin\Debug\WebShop.dll
+F:\NEw job\WebShop\WebShop.Tests\bin\Debug\WebShop.Infrastructure.dll
+F:\NEw job\WebShop\WebShop.Tests\bin\Debug\WebShop.Model.dll
+F:\NEw job\WebShop\WebShop.Tests\bin\Debug\WebShop.Repository.dll
+F:\NEw job\WebShop\WebShop.Tests\bin\Debug\WebShop.Services.dll
+F:\NEw job\WebShop\WebShop.Tests\bin\Debug\WebActivatorEx.dll
+F:\NEw job\WebShop\WebShop.Tests\bin\Debug\Microsoft.Owin.dll
+F:\NEw job\WebShop\WebShop.Tests\bin\Debug\System.Web.Optimization.dll
+F:\NEw job\WebShop\WebShop.Tests\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+F:\NEw job\WebShop\WebShop.Tests\bin\Debug\Microsoft.AspNet.Identity.Owin.dll
+F:\NEw job\WebShop\WebShop.Tests\bin\Debug\Microsoft.Owin.Security.dll
+F:\NEw job\WebShop\WebShop.Tests\bin\Debug\Microsoft.Owin.Security.OAuth.dll
+F:\NEw job\WebShop\WebShop.Tests\bin\Debug\Owin.dll
+F:\NEw job\WebShop\WebShop.Tests\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+F:\NEw job\WebShop\WebShop.Tests\bin\Debug\System.Web.Http.Owin.dll
+F:\NEw job\WebShop\WebShop.Tests\bin\Debug\Ninject.Web.Common.dll
+F:\NEw job\WebShop\WebShop.Tests\bin\Debug\Ninject.dll
+F:\NEw job\WebShop\WebShop.Tests\bin\Debug\Microsoft.Owin.Security.Cookies.dll
+F:\NEw job\WebShop\WebShop.Tests\bin\Debug\WebShop.Infrastructure.pdb
+F:\NEw job\WebShop\WebShop.Tests\bin\Debug\WebShop.Model.pdb
+F:\NEw job\WebShop\WebShop.Tests\bin\Debug\WebShop.Repository.pdb
+F:\NEw job\WebShop\WebShop.Tests\bin\Debug\WebShop.Services.pdb
+F:\NEw job\WebShop\WebShop.Tests\bin\Debug\WebShop.pdb
+F:\NEw job\WebShop\WebShop.Tests\bin\Debug\AutoMapper.xml
+F:\NEw job\WebShop\WebShop.Tests\bin\Debug\EntityFramework.xml
+F:\NEw job\WebShop\WebShop.Tests\bin\Debug\EntityFramework.SqlServer.xml
+F:\NEw job\WebShop\WebShop.Tests\bin\Debug\Newtonsoft.Json.xml
+F:\NEw job\WebShop\WebShop.Tests\bin\Debug\System.Net.Http.Formatting.xml
+F:\NEw job\WebShop\WebShop.Tests\bin\Debug\System.Web.Helpers.xml
+F:\NEw job\WebShop\WebShop.Tests\bin\Debug\System.Web.Http.xml
+F:\NEw job\WebShop\WebShop.Tests\bin\Debug\System.Web.Http.WebHost.xml
+F:\NEw job\WebShop\WebShop.Tests\bin\Debug\System.Web.Mvc.xml
+F:\NEw job\WebShop\WebShop.Tests\bin\Debug\System.Web.Razor.xml
+F:\NEw job\WebShop\WebShop.Tests\bin\Debug\System.Web.WebPages.xml
+F:\NEw job\WebShop\WebShop.Tests\bin\Debug\System.Web.WebPages.Deployment.xml
+F:\NEw job\WebShop\WebShop.Tests\bin\Debug\System.Web.WebPages.Razor.xml
+F:\NEw job\WebShop\WebShop.Tests\bin\Debug\Microsoft.Owin.xml
+F:\NEw job\WebShop\WebShop.Tests\bin\Debug\System.Web.Optimization.xml
+F:\NEw job\WebShop\WebShop.Tests\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+F:\NEw job\WebShop\WebShop.Tests\bin\Debug\Microsoft.AspNet.Identity.Owin.xml
+F:\NEw job\WebShop\WebShop.Tests\bin\Debug\Microsoft.Owin.Security.xml
+F:\NEw job\WebShop\WebShop.Tests\bin\Debug\Microsoft.Owin.Security.OAuth.xml
+F:\NEw job\WebShop\WebShop.Tests\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+F:\NEw job\WebShop\WebShop.Tests\bin\Debug\System.Web.Http.Owin.xml
+F:\NEw job\WebShop\WebShop.Tests\bin\Debug\Ninject.Web.Common.xml
+F:\NEw job\WebShop\WebShop.Tests\bin\Debug\Ninject.xml
+F:\NEw job\WebShop\WebShop.Tests\bin\Debug\Microsoft.Owin.Security.Cookies.xml
+F:\NEw job\WebShop\WebShop.Tests\obj\Debug\WebShop.Tests.csprojResolveAssemblyReference.cache
+F:\NEw job\WebShop\WebShop.Tests\obj\Debug\WebShop.Tests.dll
+F:\NEw job\WebShop\WebShop.Tests\obj\Debug\WebShop.Tests.pdb

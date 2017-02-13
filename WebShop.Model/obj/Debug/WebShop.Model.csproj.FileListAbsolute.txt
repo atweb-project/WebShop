@@ -1,0 +1,81 @@
+C:\Users\Spiros\Documents\Visual Studio 2015\Projects\WebShop\WebShop.Model\bin\Debug\WebShop.Model.dll.config
+C:\Users\Spiros\Documents\Visual Studio 2015\Projects\WebShop\WebShop.Model\bin\Debug\WebShop.Model.dll
+C:\Users\Spiros\Documents\Visual Studio 2015\Projects\WebShop\WebShop.Model\bin\Debug\WebShop.Model.pdb
+C:\Users\Spiros\Documents\Visual Studio 2015\Projects\WebShop\WebShop.Model\bin\Debug\AutoMapper.dll
+C:\Users\Spiros\Documents\Visual Studio 2015\Projects\WebShop\WebShop.Model\bin\Debug\EntityFramework.dll
+C:\Users\Spiros\Documents\Visual Studio 2015\Projects\WebShop\WebShop.Model\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Spiros\Documents\Visual Studio 2015\Projects\WebShop\WebShop.Model\bin\Debug\WebShop.Infrastructure.dll
+C:\Users\Spiros\Documents\Visual Studio 2015\Projects\WebShop\WebShop.Model\bin\Debug\WebShop.Repository.dll
+C:\Users\Spiros\Documents\Visual Studio 2015\Projects\WebShop\WebShop.Model\bin\Debug\WebShop.Infrastructure.pdb
+C:\Users\Spiros\Documents\Visual Studio 2015\Projects\WebShop\WebShop.Model\bin\Debug\AutoMapper.xml
+C:\Users\Spiros\Documents\Visual Studio 2015\Projects\WebShop\WebShop.Model\bin\Debug\EntityFramework.xml
+C:\Users\Spiros\Documents\Visual Studio 2015\Projects\WebShop\WebShop.Model\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Spiros\Documents\Visual Studio 2015\Projects\WebShop\WebShop.Model\bin\Debug\WebShop.Repository.pdb
+C:\Users\Spiros\Documents\Visual Studio 2015\Projects\WebShop\WebShop.Model\obj\Debug\WebShop.Model.csprojResolveAssemblyReference.cache
+C:\Users\Spiros\Documents\Visual Studio 2015\Projects\WebShop\WebShop.Model\obj\Debug\WebShop.Model.dll
+C:\Users\Spiros\Documents\Visual Studio 2015\Projects\WebShop\WebShop.Model\obj\Debug\WebShop.Model.pdb
+C:\Users\Spiros\documents\visual studio 2015\Projects\WebShop\WebShop.Model\bin\Debug\System.Web.Mvc.dll
+C:\Users\Spiros\documents\visual studio 2015\Projects\WebShop\WebShop.Model\bin\Debug\System.Web.Razor.dll
+C:\Users\Spiros\documents\visual studio 2015\Projects\WebShop\WebShop.Model\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Users\Spiros\documents\visual studio 2015\Projects\WebShop\WebShop.Model\bin\Debug\System.Web.WebPages.dll
+C:\Users\Spiros\documents\visual studio 2015\Projects\WebShop\WebShop.Model\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Users\Spiros\documents\visual studio 2015\Projects\WebShop\WebShop.Model\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Users\Spiros\documents\visual studio 2015\Projects\WebShop\WebShop.Model\bin\Debug\System.Web.Mvc.xml
+C:\Users\Spiros\documents\visual studio 2015\Projects\WebShop\WebShop.Model\bin\Debug\System.Web.Razor.xml
+C:\Users\Spiros\documents\visual studio 2015\Projects\WebShop\WebShop.Model\bin\Debug\System.Web.WebPages.Razor.xml
+C:\Users\Spiros\documents\visual studio 2015\Projects\WebShop\WebShop.Model\bin\Debug\System.Web.WebPages.xml
+C:\Users\Spiros\documents\visual studio 2015\Projects\WebShop\WebShop.Model\bin\Debug\System.Web.WebPages.Deployment.xml
+F:\NEw job\WebShop\WebShop.Model\bin\Debug\WebShop.Model.dll.config
+F:\NEw job\WebShop\WebShop.Model\bin\Debug\WebShop.Model.dll
+F:\NEw job\WebShop\WebShop.Model\bin\Debug\WebShop.Model.pdb
+F:\NEw job\WebShop\WebShop.Model\bin\Debug\AutoMapper.dll
+F:\NEw job\WebShop\WebShop.Model\bin\Debug\EntityFramework.dll
+F:\NEw job\WebShop\WebShop.Model\bin\Debug\EntityFramework.SqlServer.dll
+F:\NEw job\WebShop\WebShop.Model\bin\Debug\WebShop.Infrastructure.dll
+F:\NEw job\WebShop\WebShop.Model\bin\Debug\System.Web.Mvc.dll
+F:\NEw job\WebShop\WebShop.Model\bin\Debug\WebShop.Repository.dll
+F:\NEw job\WebShop\WebShop.Model\bin\Debug\System.Web.Razor.dll
+F:\NEw job\WebShop\WebShop.Model\bin\Debug\System.Web.WebPages.Razor.dll
+F:\NEw job\WebShop\WebShop.Model\bin\Debug\System.Web.WebPages.dll
+F:\NEw job\WebShop\WebShop.Model\bin\Debug\Microsoft.Web.Infrastructure.dll
+F:\NEw job\WebShop\WebShop.Model\bin\Debug\System.Web.WebPages.Deployment.dll
+F:\NEw job\WebShop\WebShop.Model\bin\Debug\WebShop.Infrastructure.pdb
+F:\NEw job\WebShop\WebShop.Model\bin\Debug\AutoMapper.xml
+F:\NEw job\WebShop\WebShop.Model\bin\Debug\EntityFramework.xml
+F:\NEw job\WebShop\WebShop.Model\bin\Debug\EntityFramework.SqlServer.xml
+F:\NEw job\WebShop\WebShop.Model\bin\Debug\System.Web.Mvc.xml
+F:\NEw job\WebShop\WebShop.Model\bin\Debug\WebShop.Repository.pdb
+F:\NEw job\WebShop\WebShop.Model\bin\Debug\System.Web.Razor.xml
+F:\NEw job\WebShop\WebShop.Model\bin\Debug\System.Web.WebPages.Razor.xml
+F:\NEw job\WebShop\WebShop.Model\bin\Debug\System.Web.WebPages.xml
+F:\NEw job\WebShop\WebShop.Model\bin\Debug\System.Web.WebPages.Deployment.xml
+F:\NEw job\WebShop\WebShop.Model\obj\Debug\WebShop.Model.csprojResolveAssemblyReference.cache
+F:\NEw job\WebShop\WebShop.Model\obj\Debug\WebShop.Model.dll
+F:\NEw job\WebShop\WebShop.Model\obj\Debug\WebShop.Model.pdb
+C:\wamp\www\WebShop\WebShop\WebShop.Model\bin\Debug\WebShop.Model.dll.config
+C:\wamp\www\WebShop\WebShop\WebShop.Model\bin\Debug\WebShop.Model.dll
+C:\wamp\www\WebShop\WebShop\WebShop.Model\bin\Debug\WebShop.Model.pdb
+C:\wamp\www\WebShop\WebShop\WebShop.Model\bin\Debug\AutoMapper.dll
+C:\wamp\www\WebShop\WebShop\WebShop.Model\bin\Debug\EntityFramework.dll
+C:\wamp\www\WebShop\WebShop\WebShop.Model\bin\Debug\EntityFramework.SqlServer.dll
+C:\wamp\www\WebShop\WebShop\WebShop.Model\bin\Debug\WebShop.Infrastructure.dll
+C:\wamp\www\WebShop\WebShop\WebShop.Model\bin\Debug\System.Web.Mvc.dll
+C:\wamp\www\WebShop\WebShop\WebShop.Model\bin\Debug\WebShop.Repository.dll
+C:\wamp\www\WebShop\WebShop\WebShop.Model\bin\Debug\System.Web.Razor.dll
+C:\wamp\www\WebShop\WebShop\WebShop.Model\bin\Debug\System.Web.WebPages.Razor.dll
+C:\wamp\www\WebShop\WebShop\WebShop.Model\bin\Debug\System.Web.WebPages.dll
+C:\wamp\www\WebShop\WebShop\WebShop.Model\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\wamp\www\WebShop\WebShop\WebShop.Model\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\wamp\www\WebShop\WebShop\WebShop.Model\bin\Debug\WebShop.Infrastructure.pdb
+C:\wamp\www\WebShop\WebShop\WebShop.Model\bin\Debug\AutoMapper.xml
+C:\wamp\www\WebShop\WebShop\WebShop.Model\bin\Debug\EntityFramework.xml
+C:\wamp\www\WebShop\WebShop\WebShop.Model\bin\Debug\EntityFramework.SqlServer.xml
+C:\wamp\www\WebShop\WebShop\WebShop.Model\bin\Debug\System.Web.Mvc.xml
+C:\wamp\www\WebShop\WebShop\WebShop.Model\bin\Debug\WebShop.Repository.pdb
+C:\wamp\www\WebShop\WebShop\WebShop.Model\bin\Debug\System.Web.Razor.xml
+C:\wamp\www\WebShop\WebShop\WebShop.Model\bin\Debug\System.Web.WebPages.Razor.xml
+C:\wamp\www\WebShop\WebShop\WebShop.Model\bin\Debug\System.Web.WebPages.xml
+C:\wamp\www\WebShop\WebShop\WebShop.Model\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\wamp\www\WebShop\WebShop\WebShop.Model\obj\Debug\WebShop.Model.csprojResolveAssemblyReference.cache
+C:\wamp\www\WebShop\WebShop\WebShop.Model\obj\Debug\WebShop.Model.dll
+C:\wamp\www\WebShop\WebShop\WebShop.Model\obj\Debug\WebShop.Model.pdb
