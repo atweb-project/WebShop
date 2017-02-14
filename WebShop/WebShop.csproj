@@ -1172,6 +1172,7 @@
     <Content Include="Scripts\angular\version.json" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Scripts\controllers\" />
     <Folder Include="Views\Base\" />
     <Folder Include="Views\Error\" />
     <Folder Include="Views\Order\" />
