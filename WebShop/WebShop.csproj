@@ -1170,6 +1170,11 @@
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Scripts\angular\version.json" />
+    <Content Include="Views\Home\Partial\MenuBar.cshtml" />
+    <Content Include="Views\Home\Partial\HeroSlider.cshtml" />
+    <Content Include="Views\Home\Partial\Products.cshtml" />
+    <Content Include="Views\Home\Partial\CountDown.cshtml" />
+    <Content Include="Views\Home\Partial\About.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Scripts\controllers\" />
