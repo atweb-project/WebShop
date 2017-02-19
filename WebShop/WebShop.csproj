@@ -330,6 +330,7 @@
     <Content Include="Content\img\product1.jpg" />
     <Content Include="Content\img\product2.jpg" />
     <Content Include="Content\img\product3.jpg" />
+    <Content Include="DataBaseScript\fishgrill_script.txt" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -1132,6 +1133,8 @@
     <Content Include="Scripts\angular\i18n\angular-locale_zh.js" />
     <Content Include="Scripts\angular\i18n\angular-locale_zu-za.js" />
     <Content Include="Scripts\angular\i18n\angular-locale_zu.js" />
+    <Content Include="Scripts\controllers\productsController.js" />
+    <Content Include="Scripts\controllers\orderController.js" />
     <Content Include="Scripts\countdown\jquery.countdown.min.js" />
     <Content Include="Scripts\custom.js" />
     <Content Include="Scripts\hero-slider.js" />
@@ -1175,9 +1178,15 @@
     <Content Include="Views\Home\Partial\Products.cshtml" />
     <Content Include="Views\Home\Partial\CountDown.cshtml" />
     <Content Include="Views\Home\Partial\About.cshtml" />
+    <Content Include="Views\Home\Partial\Testimonials.cshtml" />
+    <Content Include="Views\Home\Partial\Newsletter.cshtml" />
+    <Content Include="Views\Home\Partial\OrderForm.cshtml" />
+    <Content Include="Views\Home\Partial\Presentation.cshtml" />
+    <Content Include="Views\Home\Partial\ContactForm.cshtml" />
+    <Content Include="Views\Home\Partial\Footer.cshtml" />
+    <Content Include="Views\Home\Partial\Modal.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Scripts\controllers\" />
     <Folder Include="Views\Base\" />
     <Folder Include="Views\Error\" />
     <Folder Include="Views\Order\" />
