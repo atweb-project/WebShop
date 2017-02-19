@@ -5,24 +5,24 @@
 </div>
 <div class="container">
     <div id="projects-container" class="row">
-        <article class="design product col-xs-12 col-sm-6 col-md-4 anima fade-up">
+        <article class="design product col-xs-12 col-sm-6 col-md-4 anima fade-up" ng-repeat="item in items">
             <div class="img-box">
                 <div class="hover-mask2"></div>
                 <span class="product-icon icon-eye"></span>
-                <img class="img-responsive project-image" src="~/Content/img/product1.jpg" alt="">
+                <img class="img-responsive project-image" src="~/Content/img/{{item.image}}" alt="">
             </div>
             <div class="product-info col-md-12">
-                <p class="project-price">$700</p>
+                <p class="project-price">${{item.price}}</p>
                 <div>
-                    <h4 class="project-title">{{items[0]['name']}}</h4>
+                    <h4 class="project-title">{{item.name}}</h4>
                 </div>
             </div>
-            <div class="sr-only project-description" data-oldprice="$800" data-images="Content/img/01.jpg,Content/img/02.jpg,Content/img/03.jpg,Content/img/04.jpg,Content/img/05.jpg">
-                <p>1Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sapien risus, blandit at fringilla ac, varius sed dolor. Donec augue lacus, vulputate sed consectetur facilisis, interdum pharetra ligula. Nulla suscipit erat nibh, ut porttitor nisl dapibus eu.</p>
+            <div class="sr-only project-description" data-oldprice="${{item.oldprice}}" data-images="Content/img/01.jpg,Content/img/02.jpg,Content/img/03.jpg,Content/img/04.jpg,Content/img/05.jpg">
+                <p>{{item.description}}</p>
             </div>
         </article>
 
-        <article class="mock-up product col-xs-12 col-sm-6 col-md-4 anima fade-up d1">
+        @*<article class="mock-up product col-xs-12 col-sm-6 col-md-4 anima fade-up d1">
             <div class="img-box">
                 <div class="hover-mask2"></div>
                 <span class="product-icon icon-eye"></span>
@@ -40,7 +40,7 @@
             </div>
         </article>
 
-        <article class=" icons product col-xs-12 col-sm-6 col-md-4 anima fade-up d2">
+        <article class="icons product col-xs-12 col-sm-6 col-md-4 anima fade-up d2">
             <div class="img-box">
                 <div class="hover-mask2"></div>
                 <span class="product-icon icon-eye"></span>
@@ -56,7 +56,7 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sapien risus, blandit at fringilla ac, varius sed dolor. Donec augue lacus, vulputate sed consectetur facilisis, interdum pharetra ligula. Nulla suscipit erat nibh, ut porttitor nisl dapibus eu.</p>
                 <p>Nam eget urna pellentesque nisl ultrices dapibus. Mauris accumsan vehicula nisl, sed tempus mauris facilisis eu. Donec a iaculis nisi, quis malesuada justo. Pellentesque ut enim sit amet ipsum dignissim egestas. Morbi tincidunt rhoncus urna eget placerat.</p>
             </div>
-        </article>
+        </article>*@
     </div>
 </div>
 <div id="project-modal" class="modal " style="display: none;" aria-hidden="true">
