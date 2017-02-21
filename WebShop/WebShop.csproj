@@ -1154,6 +1154,7 @@
     <Content Include="Scripts\project-slider.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
+    <Content Include="Scripts\services\productsService.js" />
     <Content Include="Scripts\singlepagenav\jquery.singlePageNav.min.js" />
     <Content Include="Scripts\waitforimages\jquery.waitforimages.min.js" />
     <Content Include="Scripts\waypoints\jquery.waypoints.min.js" />
