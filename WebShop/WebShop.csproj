@@ -1137,6 +1137,7 @@
     <Content Include="Scripts\controllers\orderController.js" />
     <Content Include="Scripts\countdown\jquery.countdown.min.js" />
     <Content Include="Scripts\custom.js" />
+    <Content Include="Scripts\directives\home-slider-directive.js" />
     <Content Include="Scripts\hero-slider.js" />
     <Content Include="Scripts\jquery-3.1.1.js" />
     <Content Include="Scripts\jquery-3.1.1.min.js" />
