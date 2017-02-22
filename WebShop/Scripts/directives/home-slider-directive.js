@@ -3,7 +3,7 @@ app.directive('homeSlider', function () {
     return {
         restrict: 'A',
         link: function (scope, element, attrs) {
-           // debugger;
+            // debugger;
             // $(element).toolbar(scope.$eval(attrs.toolbarTip));
             if (element.length) {
                 console.log(element)
