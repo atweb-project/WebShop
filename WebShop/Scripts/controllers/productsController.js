@@ -1,15 +1,15 @@
+app.controller("productsController", function($scope, productsService) {
 
-app.controller('productsController', function($scope, productsService) {
-  
     getItems();
 
     function getItems() {
         productsService.getItems().then(function (itms) {
-                $scope.items = itms;
+                $scope.items = itms.data;
                 console.log($scope.items);
             }, function (error) {
-                $scope.status = 'Unable to load customer data: ' + error.message;
+                $scope.status = "Unable to load customer data: " + error;
                 console.log($scope.status);
+                console.log(error);
             });
     }
 });

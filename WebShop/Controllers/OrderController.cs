@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
@@ -26,7 +27,7 @@ namespace WebShop.Controllers
         [HttpGet]
         public JsonResult GetItems()
         {
-            return Json(this._ItemService.GetItems(), JsonRequestBehavior.AllowGet);
+            return Json(this._ItemService.GetItems().ToList(), JsonRequestBehavior.AllowGet);
         }
 
         [HttpPost]

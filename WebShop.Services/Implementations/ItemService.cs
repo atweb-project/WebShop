@@ -19,7 +19,7 @@ namespace WebShop.Services.Implementations
 
         public List<Item> GetItems()
         {
-            return this._unitOfWork.Repository<Item>().Query().Get().ToList();
+            return this._dbContext.Set<Item>().ToList();
         }
 
         public List<Item> GetItems(Expression<Func<Item, bool>> filter)

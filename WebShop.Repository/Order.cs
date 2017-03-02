@@ -27,6 +27,9 @@ namespace WebShop.Repository
         public string FromTime { get; set; }
         public string ToTime { get; set; }
         public string Comments { get; set; }
+        public Nullable<decimal> NetTotal { get; set; }
+        public Nullable<decimal> VAT { get; set; }
+        public Nullable<decimal> GrossTotal { get; set; }
     
         public virtual Customer Customer { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]

@@ -9,16 +9,16 @@
             <div class="img-box">
                 <div class="hover-mask2"></div>
                 <span class="product-icon icon-eye"></span>
-                <img class="img-responsive project-image" src="~/Content/img/{{item.image}}" alt="">
+                <img class="img-responsive project-image" src="{{item.Image}}" alt="">
             </div>
             <div class="product-info col-md-12">
-                <p class="project-price">${{item.price}}</p>
+                <p class="project-price">{{item.Price}}€</p>
                 <div>
-                    <h4 class="project-title">{{item.name}}</h4>
+                    <h4 class="project-title">{{item.Title}}</h4>
                 </div>
             </div>
             <div class="sr-only project-description" data-oldprice="${{item.oldprice}}" data-images="Content/img/01.jpg,Content/img/02.jpg,Content/img/03.jpg,Content/img/04.jpg,Content/img/05.jpg">
-                <p>{{item.description}}</p>
+                <p>{{item.Description}}</p>
             </div>
         </article>
 

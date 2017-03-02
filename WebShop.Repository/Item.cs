@@ -25,7 +25,13 @@ namespace WebShop.Repository
         public string Description { get; set; }
         public int IdType { get; set; }
         public System.DateTime Vs_date { get; set; }
-    
+        public string Title { get; set; }
+        public Nullable<decimal> Price { get; set; }
+        public Nullable<decimal> Vat { get; set; }
+        public string Image { get; set; }
+        public int IdSale { get; set; }
+        public int Quantity { get; set; }
+
         public virtual Type Type { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<TrOrder> TrOrders { get; set; }

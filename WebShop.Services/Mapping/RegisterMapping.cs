@@ -28,10 +28,9 @@ namespace WebShop.Services.Mapping
                   .ForMember(d => d.Id, opt => opt.MapFrom(s => s.IdOrder)
                   ).ReverseMap();
 
-
             CreateMap<ItemViewModel, TrOrder>()
                   .ForMember(d => d.IdItem, opt => opt.MapFrom(s => s.IdItem))
-                  .ForMember(d => d.ItemKg, opt => opt.MapFrom(s => s.ItemKg)
+                  .ForMember(d => d.Quantity, opt => opt.MapFrom(s => s.ItemKg)
                   ).ReverseMap();
 
         }

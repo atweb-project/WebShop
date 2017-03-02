@@ -1,81 +1,81 @@
 USE [master]
 GO
-/****** Object:  Database [F:\sites-projects\WebShop\Fishgrill.mdf]    Script Date: 21/02/2017 23:24:07 ******/
-CREATE DATABASE [F:\sites-projects\WebShop\Fishgrill.mdf]
+/****** Object:  Database [WebShop]    Script Date: 3/2/2017 11:51:25 PM ******/
+CREATE DATABASE [WebShop]
  CONTAINMENT = NONE
  ON  PRIMARY 
-( NAME = N'Fishgrill', FILENAME = N'F:\sites-projects\WebShop\Fishgrill.mdf' , SIZE = 8192KB , MAXSIZE = UNLIMITED, FILEGROWTH = 65536KB )
+( NAME = N'WebShop', FILENAME = N'C:\Program Files\Microsoft SQL Server\MSSQL13.SQLEXPRESS\MSSQL\DATA\WebShop.mdf' , SIZE = 8192KB , MAXSIZE = UNLIMITED, FILEGROWTH = 65536KB )
  LOG ON 
-( NAME = N'Fishgrill_log', FILENAME = N'F:\sites-projects\WebShop\Fishgrill_log.ldf' , SIZE = 8192KB , MAXSIZE = 2048GB , FILEGROWTH = 65536KB )
+( NAME = N'WebShop_log', FILENAME = N'C:\Program Files\Microsoft SQL Server\MSSQL13.SQLEXPRESS\MSSQL\DATA\WebShop_log.ldf' , SIZE = 8192KB , MAXSIZE = 2048GB , FILEGROWTH = 65536KB )
 GO
-ALTER DATABASE [F:\sites-projects\WebShop\Fishgrill.mdf] SET COMPATIBILITY_LEVEL = 130
+ALTER DATABASE [WebShop] SET COMPATIBILITY_LEVEL = 130
 GO
 IF (1 = FULLTEXTSERVICEPROPERTY('IsFullTextInstalled'))
 begin
-EXEC [F:\sites-projects\WebShop\Fishgrill.mdf].[dbo].[sp_fulltext_database] @action = 'enable'
+EXEC [WebShop].[dbo].[sp_fulltext_database] @action = 'enable'
 end
 GO
-ALTER DATABASE [F:\sites-projects\WebShop\Fishgrill.mdf] SET ANSI_NULL_DEFAULT OFF 
+ALTER DATABASE [WebShop] SET ANSI_NULL_DEFAULT OFF 
 GO
-ALTER DATABASE [F:\sites-projects\WebShop\Fishgrill.mdf] SET ANSI_NULLS OFF 
+ALTER DATABASE [WebShop] SET ANSI_NULLS OFF 
 GO
-ALTER DATABASE [F:\sites-projects\WebShop\Fishgrill.mdf] SET ANSI_PADDING OFF 
+ALTER DATABASE [WebShop] SET ANSI_PADDING OFF 
 GO
-ALTER DATABASE [F:\sites-projects\WebShop\Fishgrill.mdf] SET ANSI_WARNINGS OFF 
+ALTER DATABASE [WebShop] SET ANSI_WARNINGS OFF 
 GO
-ALTER DATABASE [F:\sites-projects\WebShop\Fishgrill.mdf] SET ARITHABORT OFF 
+ALTER DATABASE [WebShop] SET ARITHABORT OFF 
 GO
-ALTER DATABASE [F:\sites-projects\WebShop\Fishgrill.mdf] SET AUTO_CLOSE ON 
+ALTER DATABASE [WebShop] SET AUTO_CLOSE OFF 
 GO
-ALTER DATABASE [F:\sites-projects\WebShop\Fishgrill.mdf] SET AUTO_SHRINK OFF 
+ALTER DATABASE [WebShop] SET AUTO_SHRINK OFF 
 GO
-ALTER DATABASE [F:\sites-projects\WebShop\Fishgrill.mdf] SET AUTO_UPDATE_STATISTICS ON 
+ALTER DATABASE [WebShop] SET AUTO_UPDATE_STATISTICS ON 
 GO
-ALTER DATABASE [F:\sites-projects\WebShop\Fishgrill.mdf] SET CURSOR_CLOSE_ON_COMMIT OFF 
+ALTER DATABASE [WebShop] SET CURSOR_CLOSE_ON_COMMIT OFF 
 GO
-ALTER DATABASE [F:\sites-projects\WebShop\Fishgrill.mdf] SET CURSOR_DEFAULT  GLOBAL 
+ALTER DATABASE [WebShop] SET CURSOR_DEFAULT  GLOBAL 
 GO
-ALTER DATABASE [F:\sites-projects\WebShop\Fishgrill.mdf] SET CONCAT_NULL_YIELDS_NULL OFF 
+ALTER DATABASE [WebShop] SET CONCAT_NULL_YIELDS_NULL OFF 
 GO
-ALTER DATABASE [F:\sites-projects\WebShop\Fishgrill.mdf] SET NUMERIC_ROUNDABORT OFF 
+ALTER DATABASE [WebShop] SET NUMERIC_ROUNDABORT OFF 
 GO
-ALTER DATABASE [F:\sites-projects\WebShop\Fishgrill.mdf] SET QUOTED_IDENTIFIER OFF 
+ALTER DATABASE [WebShop] SET QUOTED_IDENTIFIER OFF 
 GO
-ALTER DATABASE [F:\sites-projects\WebShop\Fishgrill.mdf] SET RECURSIVE_TRIGGERS OFF 
+ALTER DATABASE [WebShop] SET RECURSIVE_TRIGGERS OFF 
 GO
-ALTER DATABASE [F:\sites-projects\WebShop\Fishgrill.mdf] SET  DISABLE_BROKER 
+ALTER DATABASE [WebShop] SET  DISABLE_BROKER 
 GO
-ALTER DATABASE [F:\sites-projects\WebShop\Fishgrill.mdf] SET AUTO_UPDATE_STATISTICS_ASYNC OFF 
+ALTER DATABASE [WebShop] SET AUTO_UPDATE_STATISTICS_ASYNC OFF 
 GO
-ALTER DATABASE [F:\sites-projects\WebShop\Fishgrill.mdf] SET DATE_CORRELATION_OPTIMIZATION OFF 
+ALTER DATABASE [WebShop] SET DATE_CORRELATION_OPTIMIZATION OFF 
 GO
-ALTER DATABASE [F:\sites-projects\WebShop\Fishgrill.mdf] SET TRUSTWORTHY OFF 
+ALTER DATABASE [WebShop] SET TRUSTWORTHY OFF 
 GO
-ALTER DATABASE [F:\sites-projects\WebShop\Fishgrill.mdf] SET ALLOW_SNAPSHOT_ISOLATION OFF 
+ALTER DATABASE [WebShop] SET ALLOW_SNAPSHOT_ISOLATION OFF 
 GO
-ALTER DATABASE [F:\sites-projects\WebShop\Fishgrill.mdf] SET PARAMETERIZATION SIMPLE 
+ALTER DATABASE [WebShop] SET PARAMETERIZATION SIMPLE 
 GO
-ALTER DATABASE [F:\sites-projects\WebShop\Fishgrill.mdf] SET READ_COMMITTED_SNAPSHOT OFF 
+ALTER DATABASE [WebShop] SET READ_COMMITTED_SNAPSHOT OFF 
 GO
-ALTER DATABASE [F:\sites-projects\WebShop\Fishgrill.mdf] SET HONOR_BROKER_PRIORITY OFF 
+ALTER DATABASE [WebShop] SET HONOR_BROKER_PRIORITY OFF 
 GO
-ALTER DATABASE [F:\sites-projects\WebShop\Fishgrill.mdf] SET RECOVERY SIMPLE 
+ALTER DATABASE [WebShop] SET RECOVERY SIMPLE 
 GO
-ALTER DATABASE [F:\sites-projects\WebShop\Fishgrill.mdf] SET  MULTI_USER 
+ALTER DATABASE [WebShop] SET  MULTI_USER 
 GO
-ALTER DATABASE [F:\sites-projects\WebShop\Fishgrill.mdf] SET PAGE_VERIFY CHECKSUM  
+ALTER DATABASE [WebShop] SET PAGE_VERIFY CHECKSUM  
 GO
-ALTER DATABASE [F:\sites-projects\WebShop\Fishgrill.mdf] SET DB_CHAINING OFF 
+ALTER DATABASE [WebShop] SET DB_CHAINING OFF 
 GO
-ALTER DATABASE [F:\sites-projects\WebShop\Fishgrill.mdf] SET FILESTREAM( NON_TRANSACTED_ACCESS = OFF ) 
+ALTER DATABASE [WebShop] SET FILESTREAM( NON_TRANSACTED_ACCESS = OFF ) 
 GO
-ALTER DATABASE [F:\sites-projects\WebShop\Fishgrill.mdf] SET TARGET_RECOVERY_TIME = 60 SECONDS 
+ALTER DATABASE [WebShop] SET TARGET_RECOVERY_TIME = 60 SECONDS 
 GO
-ALTER DATABASE [F:\sites-projects\WebShop\Fishgrill.mdf] SET DELAYED_DURABILITY = DISABLED 
+ALTER DATABASE [WebShop] SET DELAYED_DURABILITY = DISABLED 
 GO
-ALTER DATABASE [F:\sites-projects\WebShop\Fishgrill.mdf] SET QUERY_STORE = OFF
+ALTER DATABASE [WebShop] SET QUERY_STORE = OFF
 GO
-USE [F:\sites-projects\WebShop\Fishgrill.mdf]
+USE [WebShop]
 GO
 ALTER DATABASE SCOPED CONFIGURATION SET MAXDOP = 0;
 GO
@@ -93,9 +93,9 @@ ALTER DATABASE SCOPED CONFIGURATION SET QUERY_OPTIMIZER_HOTFIXES = OFF;
 GO
 ALTER DATABASE SCOPED CONFIGURATION FOR SECONDARY SET QUERY_OPTIMIZER_HOTFIXES = PRIMARY;
 GO
-USE [F:\sites-projects\WebShop\Fishgrill.mdf]
+USE [WebShop]
 GO
-/****** Object:  Table [dbo].[Customer]    Script Date: 21/02/2017 23:24:07 ******/
+/****** Object:  Table [dbo].[Customer]    Script Date: 3/2/2017 11:51:25 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -116,7 +116,7 @@ CREATE TABLE [dbo].[Customer](
 ) ON [PRIMARY]
 
 GO
-/****** Object:  Table [dbo].[Item]    Script Date: 21/02/2017 23:24:07 ******/
+/****** Object:  Table [dbo].[Item]    Script Date: 3/2/2017 11:51:25 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -124,7 +124,7 @@ GO
 CREATE TABLE [dbo].[Item](
 	[IdItem] [int] IDENTITY(1,1) NOT NULL,
 	[Code] [varchar](20) NOT NULL,
-	[Description] [nvarchar](50) NOT NULL,
+	[Description] [nvarchar](max) NOT NULL,
 	[IdType] [int] NOT NULL,
 	[Vs_date] [datetime] NOT NULL,
 	[Title] [nchar](40) NOT NULL,
@@ -132,14 +132,15 @@ CREATE TABLE [dbo].[Item](
 	[Vat] [decimal](18, 2) NULL,
 	[Image] [varchar](50) NULL,
 	[IdSale] [int] NOT NULL,
+	[Quantity] [int] NULL,
  CONSTRAINT [PK_Item] PRIMARY KEY CLUSTERED 
 (
 	[IdItem] ASC
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
-) ON [PRIMARY] 
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
 
 GO
-/****** Object:  Table [dbo].[Order]    Script Date: 21/02/2017 23:24:07 ******/
+/****** Object:  Table [dbo].[Order]    Script Date: 3/2/2017 11:51:25 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -162,7 +163,7 @@ CREATE TABLE [dbo].[Order](
 ) ON [PRIMARY]
 
 GO
-/****** Object:  Table [dbo].[SaleType]    Script Date: 21/02/2017 23:24:07 ******/
+/****** Object:  Table [dbo].[SaleType]    Script Date: 3/2/2017 11:51:25 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -174,7 +175,7 @@ CREATE TABLE [dbo].[SaleType](
 ) ON [PRIMARY]
 
 GO
-/****** Object:  Table [dbo].[TrOrder]    Script Date: 21/02/2017 23:24:07 ******/
+/****** Object:  Table [dbo].[TrOrder]    Script Date: 3/2/2017 11:51:25 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -194,7 +195,7 @@ CREATE TABLE [dbo].[TrOrder](
 ) ON [PRIMARY]
 
 GO
-/****** Object:  Table [dbo].[Type]    Script Date: 21/02/2017 23:24:07 ******/
+/****** Object:  Table [dbo].[Type]    Script Date: 3/2/2017 11:51:25 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -208,6 +209,30 @@ CREATE TABLE [dbo].[Type](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
 ) ON [PRIMARY]
 
+GO
+SET IDENTITY_INSERT [dbo].[Item] ON 
+
+GO
+INSERT [dbo].[Item] ([IdItem], [Code], [Description], [IdType], [Vs_date], [Title], [Price], [Vat], [Image], [IdSale], [Quantity]) VALUES (3, N'1', N'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sapien risus, blandit at fringilla ac, varius sed dolor. Donec augue lacus, vulputate sed consectetur facilisis, interdum pharetra ligula. Nulla suscipit erat nibh, ut porttitor nisl dapibus eu.', 1, CAST(N'2017-02-22T14:25:10.000' AS DateTime), N'Item_1                                  ', CAST(10.00 AS Decimal(18, 2)), CAST(0.23 AS Decimal(18, 2)), N'/Content/img/product1.jpg', 1, NULL)
+GO
+INSERT [dbo].[Item] ([IdItem], [Code], [Description], [IdType], [Vs_date], [Title], [Price], [Vat], [Image], [IdSale], [Quantity]) VALUES (5, N'2', N'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sapien risus, blandit at fringilla ac, varius sed dolor. Donec augue lacus, vulputate sed consectetur facilisis, interdum pharetra ligula. Nulla suscipit erat nibh, ut porttitor nisl dapibus eu.', 1, CAST(N'2017-02-22T14:25:10.000' AS DateTime), N'Item_2                                  ', CAST(5.00 AS Decimal(18, 2)), CAST(0.23 AS Decimal(18, 2)), N'/Content/img/product2.jpg', 1, 1)
+GO
+INSERT [dbo].[Item] ([IdItem], [Code], [Description], [IdType], [Vs_date], [Title], [Price], [Vat], [Image], [IdSale], [Quantity]) VALUES (6, N'3', N'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sapien risus, blandit at fringilla ac, varius sed dolor. Donec augue lacus, vulputate sed consectetur facilisis, interdum pharetra ligula. Nulla suscipit erat nibh, ut porttitor nisl dapibus eu.', 1, CAST(N'2017-02-22T14:25:10.000' AS DateTime), N'Item_3                                  ', CAST(12.00 AS Decimal(18, 2)), CAST(0.23 AS Decimal(18, 2)), N'/Content/img/product3.jpg', 1, 1)
+GO
+INSERT [dbo].[Item] ([IdItem], [Code], [Description], [IdType], [Vs_date], [Title], [Price], [Vat], [Image], [IdSale], [Quantity]) VALUES (7, N'4', N'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sapien risus, blandit at fringilla ac, varius sed dolor. Donec augue lacus, vulputate sed consectetur facilisis, interdum pharetra ligula. Nulla suscipit erat nibh, ut porttitor nisl dapibus eu.', 1, CAST(N'2017-02-22T14:25:10.000' AS DateTime), N'Item_4                                  ', CAST(9.00 AS Decimal(18, 2)), CAST(0.23 AS Decimal(18, 2)), N'/Content/img/product2.jpg', 1, 1)
+GO
+INSERT [dbo].[Item] ([IdItem], [Code], [Description], [IdType], [Vs_date], [Title], [Price], [Vat], [Image], [IdSale], [Quantity]) VALUES (8, N'5', N'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sapien risus, blandit at fringilla ac, varius sed dolor. Donec augue lacus, vulputate sed consectetur facilisis, interdum pharetra ligula. Nulla suscipit erat nibh, ut porttitor nisl dapibus eu.', 1, CAST(N'2017-02-22T14:25:10.000' AS DateTime), N'Item_5                                  ', CAST(15.00 AS Decimal(18, 2)), CAST(0.23 AS Decimal(18, 2)), N'/Content/img/product3.jpg', 1, 1)
+GO
+INSERT [dbo].[Item] ([IdItem], [Code], [Description], [IdType], [Vs_date], [Title], [Price], [Vat], [Image], [IdSale], [Quantity]) VALUES (9, N'6', N'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sapien risus, blandit at fringilla ac, varius sed dolor. Donec augue lacus, vulputate sed consectetur facilisis, interdum pharetra ligula. Nulla suscipit erat nibh, ut porttitor nisl dapibus eu.', 1, CAST(N'2017-02-22T14:25:10.000' AS DateTime), N'Item_6                                  ', CAST(8.00 AS Decimal(18, 2)), CAST(0.23 AS Decimal(18, 2)), N'/Content/img/product1.jpg', 1, 1)
+GO
+SET IDENTITY_INSERT [dbo].[Item] OFF
+GO
+SET IDENTITY_INSERT [dbo].[Type] ON 
+
+GO
+INSERT [dbo].[Type] ([IdType], [Description]) VALUES (1, N'Fish')
+GO
+SET IDENTITY_INSERT [dbo].[Type] OFF
 GO
 ALTER TABLE [dbo].[Item] ADD  CONSTRAINT [DF_Item_Vs_date]  DEFAULT (getdate()) FOR [Vs_date]
 GO
@@ -233,5 +258,5 @@ ALTER TABLE [dbo].[TrOrder] CHECK CONSTRAINT [FK_TrOrder_IdOrder]
 GO
 USE [master]
 GO
-ALTER DATABASE [F:\sites-projects\WebShop\Fishgrill.mdf] SET  READ_WRITE 
+ALTER DATABASE [WebShop] SET  READ_WRITE 
 GO

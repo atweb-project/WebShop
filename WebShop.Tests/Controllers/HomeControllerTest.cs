@@ -33,7 +33,7 @@ namespace WebShop.Tests.Controllers
             var globalMappings = new GlobalMappings(new MappingTypes());
             globalMappings.Initialize();
 
-            var dbContext = new WebShopDBEntities();
+            var dbContext = new WebShopEntities();
             var unitOfWork = new UnitOfWork(dbContext);
             //// Arrange
             var customerService = new CustomerService(dbContext,unitOfWork);

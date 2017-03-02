@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="WebShopDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+      <Schema Namespace="WebShopModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="Customer">
           <Key>
             <PropertyRef Name="IdCustomer" />
@@ -15,6 +15,8 @@
           <Property Name="Address" Type="nvarchar" MaxLength="100" Nullable="false" />
           <Property Name="LandPhone" Type="varchar" MaxLength="20" />
           <Property Name="CellPhone" Type="varchar" MaxLength="20" />
+          <Property Name="City" Type="nvarchar" MaxLength="50" />
+          <Property Name="Zip" Type="varchar" MaxLength="5" />
         </EntityType>
         <EntityType Name="Item">
           <Key>
@@ -22,9 +24,14 @@
           </Key>
           <Property Name="IdItem" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="Code" Type="varchar" MaxLength="20" Nullable="false" />
-          <Property Name="Description" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Description" Type="nvarchar(max)" Nullable="false" />
           <Property Name="IdType" Type="int" Nullable="false" />
           <Property Name="Vs_date" Type="datetime" Nullable="false" />
+          <Property Name="Title" Type="nchar" MaxLength="40" Nullable="false" />
+          <Property Name="Price" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="Vat" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="Image" Type="varchar" MaxLength="50" />
+          <Property Name="IdSale" Type="int" Nullable="false" />
         </EntityType>
         <EntityType Name="Order">
           <Key>
@@ -37,6 +44,21 @@
           <Property Name="FromTime" Type="varchar" MaxLength="5" Nullable="false" />
           <Property Name="ToTime" Type="varchar" MaxLength="5" Nullable="false" />
           <Property Name="Comments" Type="nvarchar" MaxLength="200" />
+          <Property Name="NetTotal" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="VAT" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="GrossTotal" Type="decimal" Precision="18" Scale="2" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'WebShop.dbo.SaleType' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="SaleType">
+          <Key>
+            <PropertyRef Name="IDSale" />
+            <PropertyRef Name="Description" />
+            <PropertyRef Name="UnitOfMeasure" />
+          </Key>
+          <Property Name="IDSale" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Description" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="UnitOfMeasure" Type="int" Nullable="false" />
         </EntityType>
         <EntityType Name="TrOrder">
           <Key>
@@ -45,7 +67,10 @@
           <Property Name="IdTrOrder" Type="int" Nullable="false" />
           <Property Name="IdOrder" Type="int" Nullable="false" />
           <Property Name="IdItem" Type="int" Nullable="false" />
-          <Property Name="ItemKg" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="IdSale" Type="int" Nullable="false" />
+          <Property Name="NetPrice" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="VAT" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="GrossPrice" Type="decimal" Precision="18" Scale="2" />
         </EntityType>
         <EntityType Name="Type">
           <Key>
@@ -102,12 +127,19 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <EntityContainer Name="WebShopDBModelStoreContainer">
+        <EntityContainer Name="WebShopModelStoreContainer">
           <EntitySet Name="Customer" EntityType="Self.Customer" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Item" EntityType="Self.Item" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Order" EntityType="Self.Order" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="TrOrder" EntityType="Self.TrOrder" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Type" EntityType="Self.Type" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="SaleType" EntityType="Self.SaleType" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [SaleType].[IDSale] AS [IDSale], 
+    [SaleType].[Description] AS [Description], 
+    [SaleType].[UnitOfMeasure] AS [UnitOfMeasure]
+    FROM [dbo].[SaleType] AS [SaleType]</DefiningQuery>
+          </EntitySet>
           <AssociationSet Name="FK_Item_IdType" Association="Self.FK_Item_IdType">
             <End Role="Type" EntitySet="Type" />
             <End Role="Item" EntitySet="Item" />
@@ -129,7 +161,7 @@
     </edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
-      <Schema Namespace="WebShopDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+      <Schema Namespace="WebShopModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
         <EntityType Name="Customer">
           <Key>
             <PropertyRef Name="IdCustomer" />
@@ -140,6 +172,8 @@
           <Property Name="Address" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="LandPhone" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
           <Property Name="CellPhone" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="City" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Zip" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
           <NavigationProperty Name="Orders" Relationship="Self.FK_Order_IdCustomer" FromRole="Customer" ToRole="Order" />
         </EntityType>
         <EntityType Name="Item">
@@ -148,9 +182,14 @@
           </Key>
           <Property Name="IdItem" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="Code" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="Description" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="IdType" Type="Int32" Nullable="false" />
           <Property Name="Vs_date" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Title" Type="String" MaxLength="40" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="Price" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="Vat" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="Image" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="IdSale" Type="Int32" Nullable="false" />
           <NavigationProperty Name="Type" Relationship="Self.FK_Item_IdType" FromRole="Item" ToRole="Type" />
           <NavigationProperty Name="TrOrders" Relationship="Self.FK_TrOrder_IdItem" FromRole="Item" ToRole="TrOrder" />
         </EntityType>
@@ -165,6 +204,9 @@
           <Property Name="FromTime" Type="String" MaxLength="5" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="ToTime" Type="String" MaxLength="5" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="Comments" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="NetTotal" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="VAT" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="GrossTotal" Type="Decimal" Precision="18" Scale="2" />
           <NavigationProperty Name="Customer" Relationship="Self.FK_Order_IdCustomer" FromRole="Order" ToRole="Customer" />
           <NavigationProperty Name="TrOrders" Relationship="Self.FK_TrOrder_IdOrder" FromRole="Order" ToRole="TrOrder" />
         </EntityType>
@@ -175,7 +217,10 @@
           <Property Name="IdTrOrder" Type="Int32" Nullable="false" />
           <Property Name="IdOrder" Type="Int32" Nullable="false" />
           <Property Name="IdItem" Type="Int32" Nullable="false" />
-          <Property Name="ItemKg" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="IdSale" Type="Int32" Nullable="false" />
+          <Property Name="NetPrice" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="VAT" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="GrossPrice" Type="Decimal" Precision="18" Scale="2" />
           <NavigationProperty Name="Item" Relationship="Self.FK_TrOrder_IdItem" FromRole="TrOrder" ToRole="Item" />
           <NavigationProperty Name="Order" Relationship="Self.FK_TrOrder_IdOrder" FromRole="TrOrder" ToRole="Order" />
         </EntityType>
@@ -186,6 +231,16 @@
           <Property Name="IdType" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="Description" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
           <NavigationProperty Name="Items" Relationship="Self.FK_Item_IdType" FromRole="Type" ToRole="Item" />
+        </EntityType>
+        <EntityType Name="SaleType">
+          <Key>
+            <PropertyRef Name="IDSale" />
+            <PropertyRef Name="Description" />
+            <PropertyRef Name="UnitOfMeasure" />
+          </Key>
+          <Property Name="IDSale" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Description" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="UnitOfMeasure" Type="Int32" Nullable="false" />
         </EntityType>
         <Association Name="FK_Order_IdCustomer">
           <End Role="Customer" Type="Self.Customer" Multiplicity="1" />
@@ -235,12 +290,13 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <EntityContainer Name="WebShopDBEntities" annotation:LazyLoadingEnabled="true">
+        <EntityContainer Name="WebShopEntities" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="Customers" EntityType="Self.Customer" />
           <EntitySet Name="Items" EntityType="Self.Item" />
           <EntitySet Name="Orders" EntityType="Self.Order" />
           <EntitySet Name="TrOrders" EntityType="Self.TrOrder" />
           <EntitySet Name="Types" EntityType="Self.Type" />
+          <EntitySet Name="SaleTypes" EntityType="Self.SaleType" />
           <AssociationSet Name="FK_Order_IdCustomer" Association="Self.FK_Order_IdCustomer">
             <End Role="Customer" EntitySet="Customers" />
             <End Role="Order" EntitySet="Orders" />
@@ -263,9 +319,9 @@
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="WebShopDBModelStoreContainer" CdmEntityContainer="WebShopDBEntities">
+        <EntityContainerMapping StorageEntityContainer="WebShopModelStoreContainer" CdmEntityContainer="WebShopEntities">
           <EntitySetMapping Name="Customers">
-            <EntityTypeMapping TypeName="WebShopDBModel.Customer">
+            <EntityTypeMapping TypeName="WebShopModel.Customer">
               <MappingFragment StoreEntitySet="Customer">
                 <ScalarProperty Name="IdCustomer" ColumnName="IdCustomer" />
                 <ScalarProperty Name="LName" ColumnName="LName" />
@@ -273,22 +329,29 @@
                 <ScalarProperty Name="Address" ColumnName="Address" />
                 <ScalarProperty Name="LandPhone" ColumnName="LandPhone" />
                 <ScalarProperty Name="CellPhone" ColumnName="CellPhone" />
+                <ScalarProperty Name="City" ColumnName="City" />
+                <ScalarProperty Name="Zip" ColumnName="Zip" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="Items">
-            <EntityTypeMapping TypeName="WebShopDBModel.Item">
+            <EntityTypeMapping TypeName="WebShopModel.Item">
               <MappingFragment StoreEntitySet="Item">
                 <ScalarProperty Name="IdItem" ColumnName="IdItem" />
                 <ScalarProperty Name="Code" ColumnName="Code" />
                 <ScalarProperty Name="Description" ColumnName="Description" />
                 <ScalarProperty Name="IdType" ColumnName="IdType" />
                 <ScalarProperty Name="Vs_date" ColumnName="Vs_date" />
+                <ScalarProperty Name="Title" ColumnName="Title" />
+                <ScalarProperty Name="Price" ColumnName="Price" />
+                <ScalarProperty Name="Vat" ColumnName="Vat" />
+                <ScalarProperty Name="Image" ColumnName="Image" />
+                <ScalarProperty Name="IdSale" ColumnName="IdSale" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="Orders">
-            <EntityTypeMapping TypeName="WebShopDBModel.Order">
+            <EntityTypeMapping TypeName="WebShopModel.Order">
               <MappingFragment StoreEntitySet="Order">
                 <ScalarProperty Name="IdOrder" ColumnName="IdOrder" />
                 <ScalarProperty Name="IdCustomer" ColumnName="IdCustomer" />
@@ -297,24 +360,39 @@
                 <ScalarProperty Name="FromTime" ColumnName="FromTime" />
                 <ScalarProperty Name="ToTime" ColumnName="ToTime" />
                 <ScalarProperty Name="Comments" ColumnName="Comments" />
+                <ScalarProperty Name="NetTotal" ColumnName="NetTotal" />
+                <ScalarProperty Name="VAT" ColumnName="VAT" />
+                <ScalarProperty Name="GrossTotal" ColumnName="GrossTotal" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="TrOrders">
-            <EntityTypeMapping TypeName="WebShopDBModel.TrOrder">
+            <EntityTypeMapping TypeName="WebShopModel.TrOrder">
               <MappingFragment StoreEntitySet="TrOrder">
                 <ScalarProperty Name="IdTrOrder" ColumnName="IdTrOrder" />
                 <ScalarProperty Name="IdOrder" ColumnName="IdOrder" />
                 <ScalarProperty Name="IdItem" ColumnName="IdItem" />
-                <ScalarProperty Name="ItemKg" ColumnName="ItemKg" />
+                <ScalarProperty Name="IdSale" ColumnName="IdSale" />
+                <ScalarProperty Name="NetPrice" ColumnName="NetPrice" />
+                <ScalarProperty Name="VAT" ColumnName="VAT" />
+                <ScalarProperty Name="GrossPrice" ColumnName="GrossPrice" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="Types">
-            <EntityTypeMapping TypeName="WebShopDBModel.Type">
+            <EntityTypeMapping TypeName="WebShopModel.Type">
               <MappingFragment StoreEntitySet="Type">
                 <ScalarProperty Name="IdType" ColumnName="IdType" />
                 <ScalarProperty Name="Description" ColumnName="Description" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SaleTypes">
+            <EntityTypeMapping TypeName="WebShopModel.SaleType">
+              <MappingFragment StoreEntitySet="SaleType">
+                <ScalarProperty Name="IDSale" ColumnName="IDSale" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="UnitOfMeasure" ColumnName="UnitOfMeasure" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

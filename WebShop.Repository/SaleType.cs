@@ -12,18 +12,10 @@ namespace WebShop.Repository
     using System;
     using System.Collections.Generic;
     
-    public partial class TrOrder : EntityBase
+    public partial class SaleType
     {
-        public int IdTrOrder { get; set; }
-        public int IdOrder { get; set; }
-        public int IdItem { get; set; }
-        public int IdSale { get; set; }
-        public int Quantity { get; set; }
-        public Nullable<decimal> NetPrice { get; set; }
-        public Nullable<decimal> VAT { get; set; }
-        public Nullable<decimal> GrossPrice { get; set; }
-    
-        public virtual Item Item { get; set; }
-        public virtual Order Order { get; set; }
+        public int IDSale { get; set; }
+        public string Description { get; set; }
+        public int UnitOfMeasure { get; set; }
     }
 }

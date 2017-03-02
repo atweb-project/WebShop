@@ -13,14 +13,16 @@ namespace WebShop.Repository
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class WebShopDBEntities : DbContext , IDbContext
+    public partial class WebShopEntities : DbContext , IDbContext
     {
-        public WebShopDBEntities()
-            : base("name=WebShopDBEntities")
+        public WebShopEntities()
+            : base("name=WebShopEntities")
         {
+            this.Configuration.ProxyCreationEnabled = false;
         }
 
-        public WebShopDBEntities(string connectionString)
+
+        public WebShopEntities(string connectionString)
             : base(connectionString)
         {
             var adapter = (IObjectContextAdapter)this;
@@ -33,6 +35,7 @@ namespace WebShop.Repository
         {
             return base.Set<T>();
         }
+
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             throw new UnintentionalCodeFirstException();
@@ -43,5 +46,6 @@ namespace WebShop.Repository
         public virtual DbSet<Order> Orders { get; set; }
         public virtual DbSet<TrOrder> TrOrders { get; set; }
         public virtual DbSet<Type> Types { get; set; }
+        public virtual DbSet<SaleType> SaleTypes { get; set; }
     }
 }

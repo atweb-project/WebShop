@@ -10,3 +10,27 @@ C:\Users\Spiros\Documents\Visual Studio 2015\Projects\WebShop\WebShop.Repository
 C:\Users\Spiros\Documents\Visual Studio 2015\Projects\WebShop\WebShop.Repository\obj\Debug\WebShop.Repository.csprojResolveAssemblyReference.cache
 C:\Users\Spiros\Documents\Visual Studio 2015\Projects\WebShop\WebShop.Repository\obj\Debug\WebShop.Repository.dll
 C:\Users\Spiros\Documents\Visual Studio 2015\Projects\WebShop\WebShop.Repository\obj\Debug\WebShop.Repository.pdb
+C:\wamp\www\WebShop\WebShop\WebShop.Repository\bin\Debug\WebShop.Repository.dll.config
+C:\wamp\www\WebShop\WebShop\WebShop.Repository\bin\Debug\WebShop.Repository.dll
+C:\wamp\www\WebShop\WebShop\WebShop.Repository\bin\Debug\WebShop.Repository.pdb
+C:\wamp\www\WebShop\WebShop\WebShop.Repository\bin\Debug\AutoMapper.dll
+C:\wamp\www\WebShop\WebShop\WebShop.Repository\bin\Debug\EntityFramework.dll
+C:\wamp\www\WebShop\WebShop\WebShop.Repository\bin\Debug\EntityFramework.SqlServer.dll
+C:\wamp\www\WebShop\WebShop\WebShop.Repository\bin\Debug\AutoMapper.xml
+C:\wamp\www\WebShop\WebShop\WebShop.Repository\bin\Debug\EntityFramework.xml
+C:\wamp\www\WebShop\WebShop\WebShop.Repository\bin\Debug\EntityFramework.SqlServer.xml
+C:\wamp\www\WebShop\WebShop\WebShop.Repository\obj\Debug\WebShop.Repository.csprojResolveAssemblyReference.cache
+C:\wamp\www\WebShop\WebShop\WebShop.Repository\obj\Debug\WebShop.Repository.dll
+C:\wamp\www\WebShop\WebShop\WebShop.Repository\obj\Debug\WebShop.Repository.pdb
+E:\Git\WebShop\WebShop\WebShop.Repository\bin\Debug\WebShop.Repository.dll.config
+E:\Git\WebShop\WebShop\WebShop.Repository\bin\Debug\WebShop.Repository.dll
+E:\Git\WebShop\WebShop\WebShop.Repository\bin\Debug\WebShop.Repository.pdb
+E:\Git\WebShop\WebShop\WebShop.Repository\bin\Debug\AutoMapper.dll
+E:\Git\WebShop\WebShop\WebShop.Repository\bin\Debug\EntityFramework.dll
+E:\Git\WebShop\WebShop\WebShop.Repository\bin\Debug\EntityFramework.SqlServer.dll
+E:\Git\WebShop\WebShop\WebShop.Repository\bin\Debug\AutoMapper.xml
+E:\Git\WebShop\WebShop\WebShop.Repository\bin\Debug\EntityFramework.xml
+E:\Git\WebShop\WebShop\WebShop.Repository\bin\Debug\EntityFramework.SqlServer.xml
+E:\Git\WebShop\WebShop\WebShop.Repository\obj\Debug\WebShop.Repository.csprojResolveAssemblyReference.cache
+E:\Git\WebShop\WebShop\WebShop.Repository\obj\Debug\WebShop.Repository.dll
+E:\Git\WebShop\WebShop\WebShop.Repository\obj\Debug\WebShop.Repository.pdb

@@ -70,7 +70,7 @@ namespace WebShop.App_Start
         {
             kernel.Bind<IBaseService>().To<BaseService>();
             kernel.Bind<IUnitOfWork>().To<UnitOfWork>();
-            kernel.Bind<IDbContext>().To<WebShopDBEntities>();
+            kernel.Bind<IDbContext>().To<WebShopEntities>();
             kernel.Bind<ICustomerService>().To<CustomerService>();
             kernel.Bind<IOrderService>().To<OrderService>();
             kernel.Bind<IItemService>().To<ItemService>();

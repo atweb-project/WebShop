@@ -1,12 +1,9 @@
 
-app.factory('productsService', ['$http', function ($http) {
-
-    var productsService = {};
-
-    productsService.getItems= function () {
-        return $http.get('/Order/GetItems');
+app.factory("productsService", ["$http", function ($http) {
+    return {
+        getItems:function () {
+            return $http.get("/Order/GetItems");
+        }
     };
-
-    return productsService;
 }]);  
 
