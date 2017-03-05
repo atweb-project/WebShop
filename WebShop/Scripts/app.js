@@ -1,3 +1,3 @@
 
-app = angular.module('storeApp', []); 
+app = angular.module("storeApp", []); 
 

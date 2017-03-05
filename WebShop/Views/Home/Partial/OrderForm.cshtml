@@ -2,7 +2,7 @@
     <header class="section-header text-center">
         <h2>Order Form</h2>
     </header>
-    <form action="index.html" method="post" novalidate id="order-form">
+    <form novalidate id="order-form" ng-submit="ordrCtrl.saveOrder()">
         <div class="row">
             <div class="col-sm-12 col-md-12">
                 <table class="table">
@@ -91,19 +91,19 @@
                     <div class="col-sm-6 col-md-6">
                         <div class="form-group">
                             <label class="control-label">Name</label>
-                            <input name="First name" placeholder="First name" class="form-control input-lg" type="text">
+                            <input ng-model="ordrCtrl.orderModel.Customer.FName" name="First name" placeholder="First name" class="form-control input-lg" type="text">
                         </div>
                     </div>
                     <div class="col-sm-6 col-md-6">
                         <div class="form-group">
                             <label class="control-label">Last Name</label>
-                            <input name="Last name" placeholder="Last name" class="form-control input-lg" type="text">
+                            <input ng-model="ordrCtrl.orderModel.Customer.LName" name="Last name" placeholder="Last name" class="form-control input-lg" type="text">
                         </div>
                     </div>
                 </div>
                 <div class="form-group">
                     <label class="control-label">Email</label>
-                    <input name="email" placeholder="Your email" class="form-control input-lg" type="email">
+                    <input ng-model="ordrCtrl.orderModel.Customer.Email" name="email" placeholder="Your email" class="form-control input-lg" type="email">
                 </div>
                 <p class="text-center"><strong>If you have Coupon code</strong></p>
                 <div class="input-group ">
@@ -118,19 +118,19 @@
                 <p class="text-center"><strong>Delivery address</strong></p>
                 <div class="form-group">
                     <label class="control-label">Street</label>
-                    <input name="street" placeholder="Street address" class="form-control" type="text">
+                    <input ng-model="ordrCtrl.orderModel.Customer.Address" name="street" placeholder="Street address" class="form-control" type="text">
                 </div>
                 <div class="form-group">
                     <label class="control-label">City</label>
-                    <input name="city" placeholder="City" class="form-control" type="text">
+                    <input ng-model="ordrCtrl.orderModel.Customer.City" name="city" placeholder="City" class="form-control" type="text">
                 </div>
                 <div class="form-group">
                     <label class="control-label">Country</label>
-                    <input name="Country" placeholder="Country" class="form-control" type="text">
+                    <input ng-model="ordrCtrl.orderModel.Customer.Country" name="Country" placeholder="Country" class="form-control" type="text">
                 </div>
                 <div class="form-group">
                     <label class="control-label">postcode</label>
-                    <input name="postcode" placeholder="Post code" class="form-control" type="text">
+                    <input ng-model="ordrCtrl.orderModel.Customer.Zip" name="postcode" placeholder="Post code" class="form-control" type="text">
                 </div>
                 <table class="table">
                     <thead>

@@ -1,8 +1,8 @@
 
-app.controller("orderController", function ($scope) {
+app.controller("orderController", function ($scope, orderService) {
     var self = this;
     self.cartItems = [];
-    self.initialQuantity = 1;
+    self.orderModel = {};
     $scope.$on("addItem", function (event, data) {
         self.cartItems.push(data);
         console.log(self.cartItems);
@@ -19,6 +19,15 @@ app.controller("orderController", function ($scope) {
             total += item.Quantity * item.Price;
         });
         return total;
+    };
+    self.saveOrder = function () {       
+        self.orderModel.ListOfItemViewModels = self.cartItems;
+        console.log(self.orderModel);
+        return orderService.postOrder(self.orderModel).then(function (response) {
+            console.log(response);
+        }, function (error) {
+              console.log(error);
+        });
     };
 
 });

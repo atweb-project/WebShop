@@ -330,7 +330,7 @@
     <Content Include="Content\img\product1.jpg" />
     <Content Include="Content\img\product2.jpg" />
     <Content Include="Content\img\product3.jpg" />
-    <Content Include="DataBaseScript\fishgrill_script.txt" />
+    <Content Include="DataBaseScript\webshop_script.txt" />
     <Content Include="favicon.ico" />
     <Content Include="Content\css\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -1155,6 +1155,7 @@
     <Content Include="Scripts\project-slider.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
+    <Content Include="Scripts\services\orderService.js" />
     <Content Include="Scripts\services\productsService.js" />
     <Content Include="Scripts\singlepagenav\jquery.singlePageNav.min.js" />
     <Content Include="Scripts\waitforimages\jquery.waitforimages.min.js" />
