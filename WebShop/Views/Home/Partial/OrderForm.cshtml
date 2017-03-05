@@ -14,40 +14,31 @@
                                 <span class="hidden-xs">Quantity</span>
                                 <span class="visible-xs">QNT</span>
                             </th>
-                            <th class="text-right">Total</th>
+                            <th class="text-center">Total</th>
+                            <th class="text-right"></th>
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td class="vert-align">Bed</td>
-                            <td class="vert-align">{{ 700 | currency:"$":0 }}</td>
+                        <tr ng-show="ordrCtrl.cartItems.length === 0">
+                            <td colspan="5" style="text-align: center;"><strong>Your Cart is Empty</strong></td>
+                        </tr>
+                    <tr ng-repeat="cartItem in ordrCtrl.cartItems">
+                            <td class="vert-align">{{cartItem.Title}}</td>
+                            <td class="vert-align">{{ cartItem.Price }}€</td>
                             <td class="text-center">
-                                <select class="form-control form-control-inline" ng-model="myBed" ng-options="opt as opt.label for opt in options"></select>
+                                <input type="number" ng-model="cartItem.Quantity" ng-required class="form-control form-control-inline" style="width: 70px !important; text-align: center;">
                             </td>
-                            <td class="text-right vert-align">{{ myBed.value * 700 | currency:"$":0  }}</td>
-                        </tr>
-                        <tr>
-                            <td class="vert-align">Nightstand</td>
-                            <td class="vert-align">{{ 400 | currency:"$":0  }}</td>
-                            <td class="text-center">
-                                <select class="form-control form-control-inline" ng-model="myNightstand" ng-options="opt as opt.label for opt in options"></select>
-                            </td>
-                            <td class="text-right vert-align">{{ myNightstand.value * 400 | currency:"$":0  }}</td>
-                        </tr>
-                        <tr>
-                            <td class="vert-align">Hammock</td>
-                            <td class="vert-align">{{ 600 | currency:"$":0  }}</td>
-                            <td class="text-center">
-                                <select class="form-control form-control-inline" ng-model="myHammock" ng-options="opt as opt.label for opt in options"></select>
-                            </td>
-                            <td class="text-right vert-align">{{ myHammock.value * 600 | currency:"$":0  }}</td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
+                        <td class="text-center vert-align">{{cartItem.Quantity * cartItem.Price}}€</td>
+                        <td class="text-right vert-align" style="border-bottom: 1px solid #ddd;">
+                            <span style="cursor: pointer;" title="Delete Item from Cart" class="glyphicon glyphicon-trash" aria-hidden="true" ng-click="ordrCtrl.removeItem($index)"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
                     </tbody>
                 </table>
             </div>
@@ -156,7 +147,7 @@
                         <tr>
                             <td>Total:</td>
                             <td></td>
-                            <td id="total" class="text-right">{{ (myBed.value * 700) +  (myNightstand.value * 400) + (myHammock.value * 600) | currency }}</td>
+                            <td id="total" class="text-right">{{ ordrCtrl.total() }}€</td>
                         </tr>
                     </tbody>
                 </table>

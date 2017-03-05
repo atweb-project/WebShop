@@ -5,14 +5,15 @@
 </div>
 <div class="container">
     <div id="projects-container" class="row">
-        <article class="design product col-xs-12 col-sm-6 col-md-4 anima fade-up" ng-repeat="item in items">
-            <div class="img-box">
+        <article class="design product col-xs-12 col-sm-6 col-md-4 anima fade-up" ng-repeat="item in prodCtrl.items">
+            <div class="img-box" ng-click="prodCtrl.showInModal(item)">
                 <div class="hover-mask2"></div>
                 <span class="product-icon icon-eye"></span>
                 <img class="img-responsive project-image" src="{{item.Image}}" alt="">
             </div>
             <div class="product-info col-md-12">
-                <p class="project-price">{{item.Price}}€</p>
+                <p class="project-price" ng-model="item.Price">{{item.Price}}€</p>
+                <span class="add-to-cart icon-cart" ng-click="prodCtrl.addItems(item)" title="Add to Cart"></span>
                 <div>
                     <h4 class="project-title">{{item.Title}}</h4>
                 </div>
@@ -21,42 +22,6 @@
                 <p>{{item.Description}}</p>
             </div>
         </article>
-
-        @*<article class="mock-up product col-xs-12 col-sm-6 col-md-4 anima fade-up d1">
-            <div class="img-box">
-                <div class="hover-mask2"></div>
-                <span class="product-icon icon-eye"></span>
-                <img class="img-responsive project-image" src="~/Content/img/product2.jpg" alt="">
-            </div>
-            <div class="product-info col-md-12">
-                <p class="project-price">$400</p>
-                <div>
-                    <h4 class="project-title">Nightstand</h4>
-                </div>
-            </div>
-            <div class="sr-only project-description" data-images="Content/img/06.jpg,Content/img/07.jpg,Content/img/08.jpg,Content/img/09.jpg">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sapien risus, blandit at fringilla ac, varius sed dolor. Donec augue lacus, vulputate sed consectetur facilisis, interdum pharetra ligula. Nulla suscipit erat nibh, ut porttitor nisl dapibus eu.</p>
-                <p>Phasellus porta eros vel lacus euismod consequat. Phasellus eleifend, nibh non feugiat hendrerit, lacus enim adipiscing eros, a pharetra erat neque eget est. Quisque vitae aliquet urna. Integer suscipit lectus eu enim porttitor fringilla. Ut blandit, urna in auctor euismod, arcu eros pharetra metus, a porta purus libero a nibh.</p>
-            </div>
-        </article>
-
-        <article class="icons product col-xs-12 col-sm-6 col-md-4 anima fade-up d2">
-            <div class="img-box">
-                <div class="hover-mask2"></div>
-                <span class="product-icon icon-eye"></span>
-                <img class="img-responsive project-image" src="~/Content/img/product3.jpg" alt="">
-            </div>
-            <div class="product-info col-md-12">
-                <p class="project-price">$600</p>
-                <div>
-                    <h4 class="project-title">Hammock</h4>
-                </div>
-            </div>
-            <div class="sr-only project-description" data-oldprice="$700" data-images="Content/img/10.jpg,Content/img/11.jpg,Content/img/12.jpg">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sapien risus, blandit at fringilla ac, varius sed dolor. Donec augue lacus, vulputate sed consectetur facilisis, interdum pharetra ligula. Nulla suscipit erat nibh, ut porttitor nisl dapibus eu.</p>
-                <p>Nam eget urna pellentesque nisl ultrices dapibus. Mauris accumsan vehicula nisl, sed tempus mauris facilisis eu. Donec a iaculis nisi, quis malesuada justo. Pellentesque ut enim sit amet ipsum dignissim egestas. Morbi tincidunt rhoncus urna eget placerat.</p>
-            </div>
-        </article>*@
     </div>
 </div>
 <div id="project-modal" class="modal " style="display: none;" aria-hidden="true">
@@ -71,14 +36,15 @@
                 <div class="container">
                     <div class="row">
                         <div id="project-sidebar" class="col-md-4 ">
-                            <h2 id="sdbr-title">Flat UI-Kit</h2>
+                            <h2 id="sdbr-title">{{prodCtrl.selectedItem.Title}}</h2>
                             <div>
-                                <div id="sdbr-price">200</div>
-                                <div id="sdbr-oldprice">500</div>
+                                <div id="sdbr-price">{{prodCtrl.selectedItem.Price}}€</div>
+                                @*<div id="sdbr-oldprice">500</div>*@
                             </div>
                         </div>
                         <div id="project-content" class="col-md-8 ">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sapien risus, blandit at fringilla ac, varius sed dolor. Donec augue lacus, vulputate sed consectetur facilisis, interdum pharetra ligula. Nulla suscipit erat nibh, ut porttitor nisl dapibus eu.</p>
+                            <p>{{prodCtrl.selectedItem.Description}}</p>
+                            <a id="btn-order" ng-click="prodCtrl.addItems(prodCtrl.selectedItem)" class="btn btn-store btn-right" href="#">Order now</a>
                         </div>
                     </div>
                 </div>

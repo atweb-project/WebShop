@@ -441,6 +441,18 @@ table {
 	font-weight: 600;
 	font-size: 21px;
 	margin: 0;
+    right: 30px;
+}
+.add-to-cart {
+    float: right;
+    margin-top: 3px;
+    font-size: 18px;
+    left: 30px;
+    position: relative;
+    cursor: pointer;
+}
+.add-to-cart:hover {
+    color: #23A657; 
 }
 .project-oldprice {
 	position: relative;

@@ -6,7 +6,7 @@
     @Html.Partial("~/Views/Home/Partial/HeroSlider.cshtml");
 </section>
 
-<section id="products" class=" padding-top-bottom" ng-controller="productsController">
+<section id="products" class=" padding-top-bottom" ng-controller="productsController as prodCtrl">
     @Html.Partial("~/Views/Home/Partial/Products.cshtml");
 </section>
 
@@ -24,7 +24,7 @@
 <section id="newsletter" class="light-typo dark-bg padding-top-bottom">
     @Html.Partial("~/Views/Home/Partial/Newsletter.cshtml");
 </section>
-<section id="orderform" class="gray-bg padding-top-bottom" ng-controller="orderController">
+<section id="orderform" class="gray-bg padding-top-bottom" ng-controller="orderController as ordrCtrl">
     @Html.Partial("~/Views/Home/Partial/OrderForm.cshtml");
 </section>
 <section id="cta" class="padding-top-bottom color-bg light-typo">
